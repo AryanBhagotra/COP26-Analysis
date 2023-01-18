@@ -30,8 +30,8 @@ def get_data_time(time_frame='Post COP26 climate conference'):
 
 def plot_map(df):
     fig = px.choropleth(df, locations="Country", locationmode='country names',
-                    color="aqi", # lifeExp is a column of gapminder
-                    hover_name="Country", # column to add to hover information
+                    color="aqi", 
+                    hover_name="Country", 
                     color_continuous_scale=px.colors.sequential.Plasma)
 
 
@@ -45,6 +45,52 @@ def plot_map(df):
     st.plotly_chart(fig, use_container_width=True)
 
 
+@st.cache(ttl=24*60*60)
+def get_country_data(country):
+    country_df_post = post_df[post_df['Country'] == country]
+    country_df_pre = pre_df[pre_df['Country'] == country]
+    country_df_during = during_df[during_df['Country'] == country]
+    return country_df_post, country_df_pre, country_df_during
+
+@st.cache(ttl=24*60*60)
+def get_country_aqi_data(country):
+    country_df_post = post_df[post_df['Country'] == country]
+    country_df_pre = pre_df[pre_df['Country'] == country]
+    country_df_during = during_df[during_df['Country'] == country]
+    
+    aqi_correspondance_dict = {1:"Good", 2:"Fair", 3:"Moderate", 4: "Poor", 5: "Very Poor"}
+    post_aqi = country_df_post['aqi'].value_counts().reindex([1, 2, 3, 4, 5], fill_value=0).\
+                            rename(index=aqi_correspondance_dict)
+    pre_aqi = country_df_pre['aqi'].value_counts().reindex([1, 2, 3, 4, 5], fill_value=0).\
+                            rename(index=aqi_correspondance_dict)
+    during_aqi = country_df_during['aqi'].value_counts().reindex([1, 2, 3, 4, 5], fill_value=0).\
+                            rename(index=aqi_correspondance_dict)
+
+    return post_aqi, pre_aqi, during_aqi
+
+
+
+def plot_country_feature(feature, country_df_post, country_df_pre, country_df_during):
+    fig = make_subplots(rows=1, cols=3, subplot_titles=("Pre COP26 climate conference",
+                     "During COP26 climate conference", "Post COP26 climate conference"))
+    fig.add_trace(go.Scatter(x=country_df_pre.Date, y=country_df_pre[feature],
+                            name='Pre',marker_color='blue'), row=1, col=1)
+    fig.add_trace(go.Scatter(x=country_df_during.Date, y=country_df_during[feature],
+                            name='During',marker_color='green'), row=1, col=2)
+    fig.add_trace(go.Scatter(x=country_df_post.Date, y=country_df_post[feature],
+                            name='Post',marker_color='red'), row=1, col=3)
+    fig.update_layout(template='simple_white',height = 500, 
+                    title=f'{feature}')
+
+
+    min_y = min([country_df_pre[feature].min(), country_df_during[feature].min(), country_df_post[feature].min()])-0.5
+    max_y = max([country_df_pre[feature].max(), country_df_during[feature].max(), country_df_post[feature].max()])+0.5
+
+    fig.update_yaxes(range=[min_y, max_y], row=1, col=1)
+    fig.update_yaxes(range=[min_y, max_y], row=1, col=2)
+    fig.update_yaxes(range=[min_y, max_y], row=1, col=3)
+
+    st.plotly_chart(fig, use_container_width=True)
 
 
 styl = """
@@ -81,5 +127,27 @@ def main_page():
     with row5_2:
         plot_map(df)
         
+    row6_spacer1, row6_1, row6_spacer2 = st.columns((.2, 7.1, .2))
+    with row6_1:
+        st.subheader('Feature Analysis by Country')
+    row7_spacer1, row7_1, row7_spacer2, row7_2, row7_spacer3 = st.columns(
+        (.2, 2.3, .4, 4.4, .2))
+    with row7_1:
+        feature = st.selectbox("Please select a feature", list(
+            post_df.columns[1:-1]), key='feature', index=0)
+        country = st.selectbox("Please select a country", list(
+            post_df['Country'].unique()), key='country')
+        st.markdown('This chart shows different features of the selected country.')
+        st.markdown('**aqi=Air Quality Index**')
+        st.markdown('- Where 1 = Good, 2 = Fair, 3 = Moderate, 4 = Poor, 5 = Very Poor')
+
+    with row7_2:
+        pass
+
+
+    row8_spacer1, row8_1, row8_spacer2 = st.columns((.2, 7.1, .2))
+    with row8_1:
+        country_df_post, country_df_pre, country_df_during = get_country_data(country)
+        plot_country_feature(feature, country_df_post, country_df_pre, country_df_during)
 
 main_page()
