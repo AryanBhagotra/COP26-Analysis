@@ -93,6 +93,45 @@ def plot_country_feature(feature, country_df_post, country_df_pre, country_df_du
     st.plotly_chart(fig, use_container_width=True)
 
 
+def get_country_aqi_data_nomalized(country):
+    country_df_post = post_df[post_df['Country'] == country]
+    country_df_pre = pre_df[pre_df['Country'] == country]
+    country_df_during = during_df[during_df['Country'] == country]
+    
+    aqi_correspondance_dict = {1:"Good", 2:"Fair", 3:"Moderate", 4: "Poor", 5: "Very Poor"}
+    post_aqi = country_df_post['aqi'].value_counts(normalize=True).reindex([1, 2, 3, 4, 5], fill_value=0).\
+                            rename(index=aqi_correspondance_dict)
+    pre_aqi = country_df_pre['aqi'].value_counts(normalize=True).reindex([1, 2, 3, 4, 5], fill_value=0).\
+                            rename(index=aqi_correspondance_dict)
+    during_aqi = country_df_during['aqi'].value_counts(normalize=True).reindex([1, 2, 3, 4, 5], fill_value=0).\
+                            rename(index=aqi_correspondance_dict)
+
+    return post_aqi, pre_aqi, during_aqi
+
+def plot_stacked_bar(post_aqi, pre_aqi, during_aqi):
+    pre_aqi_df = pre_aqi.reset_index()
+    during_aqi_df = during_aqi.reset_index()
+    post_aqi_df = post_aqi.reset_index()
+    pre_aqi_df['Data'] = 'Pre'
+    during_aqi_df['Data'] = 'During'
+    post_aqi_df['Data'] = 'Post'
+    data = pd.concat([pre_aqi_df, during_aqi_df, post_aqi_df])
+    data['aqi'] = data['aqi'] * 100
+    color_discrete_map={
+                "Very Poor": "red",
+                "Good": "green",
+                "Poor": "blue",
+                "Moderate": "#636EFA",
+                "Fair": "#00CC96"}
+    fig = px.bar(data, x='Data', y='aqi', color='index',
+             color_discrete_map=color_discrete_map, hover_data={'aqi': ':.2f'})
+    fig.update_xaxes(title="Data")
+    fig.update_yaxes(title="% of Quality")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
+
 styl = """
 <style>
 .plot-container{
@@ -149,5 +188,19 @@ def main_page():
     with row8_1:
         country_df_post, country_df_pre, country_df_during = get_country_data(country)
         plot_country_feature(feature, country_df_post, country_df_pre, country_df_during)
+
+    row10_spacer1, row10_1, row10_spacer2 = st.columns((.2, 7.1, .2))
+    with row10_1:
+        st.subheader('Air Quality Index by Country')
+    row11_spacer1, row11_1, row11_spacer2, row11_2, row11_spacer3 = st.columns(
+        (.2, 2.3, .4, 4.4, .2))
+    with row11_1:
+        aqi_country = st.selectbox("Please select Country", list(
+            post_df['Country'].unique()), key='aqi_country', index=0)
+        st.markdown('This chart shows side by side comparison of Air Quality of the selected country during three periods.')
+
+    with row11_2:
+        post_aqi, pre_aqi, during_aqi = get_country_aqi_data_nomalized(aqi_country)
+        plot_stacked_bar(post_aqi, pre_aqi, during_aqi)
 
 main_page()
