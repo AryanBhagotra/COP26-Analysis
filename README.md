@@ -1,4 +1,4 @@
-# Pollution & Emission
+# Pollution & Emission - Our Final Project
 <style>
     .center {
     display: block;
