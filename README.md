@@ -10,7 +10,7 @@
     }
 </style>
 
-# Executive Summary
+## Executive Summary
 
 <br/>
 In a fast-paced world governed by the forces of data, as much as many of our problems are
