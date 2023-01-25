@@ -84,7 +84,9 @@ In fact, we were immediately presented with an almost external validation of our
 
 
 
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/3.jpg" class="center"  />
+
 
 
 
