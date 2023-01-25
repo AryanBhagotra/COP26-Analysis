@@ -24,14 +24,11 @@ As the chart shows on the left, we have seen a rise in the number of young peopl
 different geographies expressing a fear of the future of the environment; and as two ecowarriors ourselves, we found ourselves particularly compelled to examine how our interests in
 preserving the environment intersected with our interests in Data Science that we had developed over this term.
 
-### Click on the link below to see an introductory video 👇
-
-![https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg](https://www.youtube.com)
-
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg" class="center"  />
 
 
 ### Click on the link below to see an introductory video 👇
+![https://www.youtube.com]
 
 Upon further research, it became clear that the science, policy and communication practices
 around DS will impact the solutions we utilise into the future with climate change. Data science
