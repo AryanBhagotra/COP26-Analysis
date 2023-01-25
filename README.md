@@ -82,13 +82,20 @@ Through investigating the different factors that affected climate change, we wan
 
 In fact, we were immediately presented with an almost external validation of our project, with the advent of COP27 where our very own Minouche Shafik spoke in November 2022!
 
+
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/3.jpg" class="center"  />
+
+
+
+
 <ins> Preliminary Targets: </ins>
 Our initial targets following our complete change of project centred around investigating the
 efficacy of the climate initiatives. We have seen, over the last few decades, countless
 environmental initiatives being introduced. We were very interested in learning exactly what
 effect these initiatives had on the pollution levels of different countries. Given our API
 restrictions (will be examined further), we decided to focus on COP26.
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/3.jpg" class="center"  />
+
 We are interested in answering the following questions to help us further examine the efficacy of
 climate initiatives (COP26) and, moreover, ask ourselves exactly what this means for the
 environment:
