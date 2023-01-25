@@ -10,22 +10,27 @@
     }
 </style>
 
-<br/><ins> Our Rationale: </ins>
+# Executive Summary
+
+<br/>
 In a fast-paced world governed by the forces of data, as much as many of our problems are
 manifest from the pressures that technology has put on us; it’s clear that technology also serves
 to inspirit the very solution of some of the problems that our rapidly developing world has served
 to create. <br/>
+
 And, of course, there is no example where this is quite as true as climate change. <br/>
+
 We all know that climate change has serious implications for the health & futures of young
 people; but I think I speak for all of us when I say that when we young people look at ways we
 can actively combat it, we find ourselves quite powerless. As such, we’ve seen a rise in a
 phenomenon that is Climate Anxiety.<br/>
+
 As the chart shows on the left, we have seen a rise in the number of young people across
 different geographies expressing a fear of the future of the environment; and as two ecowarriors ourselves, we found ourselves particularly compelled to examine how our interests in
 preserving the environment intersected with our interests in Data Science that we had developed over this term.
 
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg" class="center"  />
 
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg" class="center"  />
 
 ### Click on the hyperlink below to see an introductory video 👇
 [A Video Introduction To Our Dynamic Streamlit Application](https://www.youtube.com)
