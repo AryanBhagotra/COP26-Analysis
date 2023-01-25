@@ -55,11 +55,13 @@ We investigated a number of trends - whether certain pollutants were more suscep
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg" class="center"  />
 
-As mentioned, in order to truly grasp the patterns and, potentially, causal relationships within our data; we realised at the end of our journey that in order to truly tell the tale of the efficacy of COP26 across different demographies, we needed to convey our data across much larger geographical regions - so we went with the whole world. 😁
+As mentioned, in order to truly grasp the patterns and, potentially, causal relationships within our data; we realised at the end of our journey that in order to truly tell the tale of the efficacy of COP26 across different demographies, we needed to convey our data across much larger geographical regions - __so we went with the whole world.__ 😁
 
 However, this required us to go beyond the remit of the project as this markdown site (as required by the project) is purely static and simply doesn't allow for any dyanmic usage. Given that we wanted our data visualisation to be interactive, we had to resort to other methods of utilising our comprehensive GitHub repository and connecting this with an app framework (that preferably supported Python lanaguage and libraries) in order to establish this interactivity.
 
 Streamlit was a fantastic app framework that enabled this, and allowed us to connect our repo and API to an interface that includes phenomenal tools of data visualisation, including a world heatmap, linegraphs and stacked barcharts for our 3 chosen periods (before, during and after COP26) for __every country__ and __every pollutant__ provided by our API.
+
+We will reveal more on our journey in creating this app further down on this page, but to get a preliminary glimpse; please see below:
 
 ### Click on the hyperlink below to see our dynamic Streamlit application 👇
 [Our Dynamic Streamlit Application](https://amandeepn-cop26-analysis-app-05i6n6.streamlit.app)
@@ -68,6 +70,10 @@ Streamlit was a fantastic app framework that enabled this, and allowed us to con
 [A Video Introduction To Our Dynamic Streamlit Application](https://www.youtube.com)
 
 ---
+
+
+### __Our Motivations: What Made Us So Curious?__ 🤔
+
 
 
 Upon further research, it became clear that the science, policy and communication practices
