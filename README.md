@@ -1,6 +1,14 @@
 # Pollution and Emissions 🌎 
 ## _Analysing and visualising the efficacy of international climate initiatives (COP26) through data_
 ---
+<style>
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    }
+</style>
 
 <br/><ins> Our Rationale: </ins>
 In a fast-paced world governed by the forces of data, as much as many of our problems are
