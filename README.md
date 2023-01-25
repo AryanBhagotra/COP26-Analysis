@@ -76,24 +76,12 @@ We will reveal more on our journey in creating this app further down on this pag
 
 
 
-Upon further research, it became clear that the science, policy and communication practices
-around DS will impact the solutions we utilise into the future with climate change. Data science
-is a phenomenal tool in helping climate researchers really understand the uncertainties and
-ambiguities inherent in climate data to ultimately identify interventions, strategies and solutions
-to fulfill the needs of both humanity and the environment - assisting loads in cases where
-decision makers are often faced with numerous and conflicting goals.
+As briefly aforementioned, our motivation for this project stemmed from our passion for the environment. We have seen, with our own eyes, how pervasive the issue of climate change is. We initially wanted to investigate multiple conferences (we identified the Kyoto Protocol as one of particular interest), but the API would not go that far back, and instead settled on COP26 (we could get data on emissions before, during and after the protocol). Data science has been a phenomenal tool in helping climate scientists critically understand the ambiguities and uncertainties inherent in climate data – we wanted to emanate this in our own project!
 
-These strategies empowered by data and data science were exactly the sort of thing we hear of
-at the likes of COP27, where our very own Minouche Shafik spoke in November 2022. And is
-where pledges determined by data like those shared at COP27, involving the likes of countries
-promising to limit global warming to 1.5 degrees are predicated. Data science is what is used to
-examine the uncertainty of climate models and ultimately help visualise the issue at hand. <br/><br/><br/>
-It is in this vein that we have aimed to use Data Science to go one step beyond this and, in an
-almost self reflective way, examine the efficacy of the very initiatives and pledges that Data
-Science has helped to create and will do so by using an Air Pollution API. We will also go one
-step beyond this and examine how the degree of response to climate change following a global
-climate protocol like COP26 varies depending on the level of economic development of
-countries as well.
+Through investigating the different factors that affected climate change, we wanted to identify any trends or patterns that could explain the last 50 years of inefficiency. As climate concerns continue to remain very pertinent, we were really interested in exploring this topic to see if there were any factors affecting pollution that we hadn’t previously considered. We are both Economists at heart, noting that pollution was a negative externality. By its very nature, pollution is something that affects all of us and it is very important that we critically analyse the policies that aim to reduce it! We wanted to go one step above and examine how the degree of response to climate change varies based on the level of economic development of the nation. Data science presents us with the opportunity to examine the uncertainty of climate models, visualising the issue at hand.
+
+In fact, we were immediately presented with an almost external validation of our project, with the advent of COP27 where our very own Minouche Shafik spoke in November 2022!
+
 <ins> Preliminary Targets: </ins>
 Our initial targets following our complete change of project centred around investigating the
 efficacy of the climate initiatives. We have seen, over the last few decades, countless
