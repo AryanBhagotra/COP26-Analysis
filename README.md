@@ -30,13 +30,20 @@ preserving the environment intersected with our interests in Data Science that w
 ### Click on the hyperlink below to see an introductory video 👇
 [A Video Introduction To Our Dynamic Streamlit Application](https://www.youtube.com)
 
+---
+
+
 Upon further research, it became clear that the science, policy and communication practices
 around DS will impact the solutions we utilise into the future with climate change. Data science
 is a phenomenal tool in helping climate researchers really understand the uncertainties and
 ambiguities inherent in climate data to ultimately identify interventions, strategies and solutions
 to fulfill the needs of both humanity and the environment - assisting loads in cases where
 decision makers are often faced with numerous and conflicting goals.
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/2.jpg" class="center"  />
+
+
 These strategies empowered by data and data science were exactly the sort of thing we hear of
 at the likes of COP27, where our very own Minouche Shafik spoke in November 2022. And is
 where pledges determined by data like those shared at COP27, involving the likes of countries
@@ -406,3 +413,11 @@ last 30 years.
 Delhi, in particular, seemed not to fit this trend - they actually increased their emissions during the
 pandemic. Clearly, different countries respond in different ways contingent on their levels of
 development.
+
+---
+
+## Appendix
+- [Reference 1](https://www.youtube.com)
+- [Reference 2](https://www.youtube.com)
+- [Reference 3](https://www.youtube.com)
+- [Reference 4](https://www.youtube.com)
