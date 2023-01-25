@@ -12,22 +12,29 @@
 
 ### __Executive Summary__ 💼
 
-<br/>
-In a fast-paced world governed by the forces of data, as much as many of our problems are
-manifest from the pressures that technology has put on us; it’s clear that technology also serves
-to inspirit the very solution of some of the problems that our rapidly developing world has served
-to create. <br/>
 
-And, of course, there is no example where this is quite as true as climate change. <br/>
+In a fast-paced world, governed by digitalisation and technology, an absolutely unequivocal pressure has been placed on the environment. The planet’s surface temperature is up 1.90 ˚F since the pre-industrial period and each and every year, the topic of climate change dominates the news headlines. 
 
-We all know that climate change has serious implications for the health & futures of young
-people; but I think I speak for all of us when I say that when we young people look at ways we
-can actively combat it, we find ourselves quite powerless. As such, we’ve seen a rise in a
-phenomenon that is Climate Anxiety.<br/>
+It is very much in this vein that last year, we saw the United Nations Climate Change Conference, dubbed COP26, take place in Glasgow. Even despite the many controversies associated with the conference, it brought together some of the world’s most powerful countries in the name of climate change. However, COP26 is not the first in the way of international conferences targeting the issue of climate change. In fact, the very first world climate conference (FWCC) took place in February 1973. Even 49 years later, the pervasive issue of climate change continues to dominate.
 
-As the chart shows on the left, we have seen a rise in the number of young people across
-different geographies expressing a fear of the future of the environment; and as two ecowarriors ourselves, we found ourselves particularly compelled to examine how our interests in
-preserving the environment intersected with our interests in Data Science that we had developed over this term.
+We know that climate change has very serious implications for both the future and the health of young people. The chart above shows the rise in the number of young people feeling concerned about climate change – in each of these nations, only an average of 4.7% of people feel not worried about the issue. Recently, with the likes of Greta Thunberg challenging world leaders to take immediate action to deal with this pervasive issue, young people like us feel empowered. It was this innate interest for uncovering exactly why we are seeing so many climate conferences that drove us to this project. We wanted to investigate what impacts these conferences having on climate change – do we see time lags take place, with countries ‘forgetting’ the lessons of the conference, are the impacts multilateral or are they contingent on the level of development?
+
+We wanted to look at several conferences and understand how they differ in their efficacy, but unfortunately with our API restrictions, we decided to focus solely on COP26. To help us answer this question, we initially began by dividing cities into three clusters:
+
+1.	A cluster with higher income cities (London and Washington DC)
+2.	A cluster with emerging cities (Delhi and São Paulo)
+3.	A cluster with lower income cities (Gaborone and Port-Au-Prince)
+
+We wanted to investigate how COP26 affected the emissions of four key pollutants:
+1.	Carbon Monoxide: carbon monoxide occurs primarily from the emissions of fossil-fuel powered engines.
+2.	Oxygen Trioxide: when inhaled, this pollutant can cause severe damage to the lungs.
+3.	Nitrous Dioxide: occurs primarily from cars, trucks, and buses. It reacts to form Nitric acid – leading to the acidification of water bodies and causing biodiversity loss.
+4.	PM2.5 Particulates: exposure to PM2.5 has been said to cause premature mortality.
+
+To help us assess the impacts that COP26 had on emissions, we used the API ?? to collect data on the emissions of these pollutants before, during and after the COP26 conference for each of these cities. We wanted to see whether, with the help of graphs and summary statistics, we would be able to uncover if there were any trends that we would be able to discern. While we initially wanted to investigate exactly how these cities changed their emissions of these pollutants, we soon realised that, to get a complete picture, it was worth analysing each and every country individually for every possible pollutant. This is the rationale behind our Dynamic Streamlit Application, providing a complete depiction of the changes in emissions. 
+
+We investigated a number of trends - whether certain pollutants were more susceptible to change during and after the conference, whether time lags did indeed exist with respect to the pollutants and if the response of a country depended on its level of development. We extracted over HOW MANY PIECES OF DATA. If time lags do exist, it can explain why so many conferences have taken place. However, it also suggests that systemic change needs to be made with respect to how the issue of climate change is being dealt with. If the level of development of a country does, indeed, affect the extent to which pollution can be curtailed, it provides evidence for Ha-Joon Chang’s argument that the richer nations are ’Kicking Away The Ladder,’ for the less developed countries.
+
 
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg" class="center"  />
