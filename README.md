@@ -1,4 +1,4 @@
-# Pollution and Emissions 
+# Pollution and Emissions 🌎 
 ## _Analysing and visualising the efficacy of international climate initiatives (COP26) through data_
 ---
 
