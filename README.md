@@ -26,7 +26,7 @@ preserving the environment intersected with our interests in Data Science that w
 
 ### Click on our app below to see an introductory video 👇
 
-[!(https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg)](https://www.youtube.com)
+![(https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg)](https://www.youtube.com)
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg" class="center"  />
 Upon further research, it became clear that the science, policy and communication practices
