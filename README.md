@@ -1,13 +1,6 @@
-# Pollution & Emission - Our Final Project
-<style>
-    .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    }
-</style>
-<ins> Analysing and visualising the efficacy of international climate initiatives (COP26) through data </ins>
+## **Pollution & Emissions**
+
+> ## Analysing and visualising the efficacy of international climate initiatives (COP26) through data
 
 <br/><ins> Our Rationale: </ins>
 In a fast-paced world governed by the forces of data, as much as many of our problems are
