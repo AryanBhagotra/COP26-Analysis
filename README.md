@@ -1,4 +1,4 @@
-# Pollution and Emissions: Analysing and visualising the efficacy of COP26 Through Data 
+# Pollution and Emissions: Analysing & Visualising The Efficacy of COP26 Through Data 
 ## _An outlook into our project, our journey and our dynamic Streamlit application extending our research & analysis to the whole world  🌎_
 ---
 <style>
@@ -10,7 +10,7 @@
     }
 </style>
 
-## Executive Summary
+### Executive Summary 💼
 
 <br/>
 In a fast-paced world governed by the forces of data, as much as many of our problems are
