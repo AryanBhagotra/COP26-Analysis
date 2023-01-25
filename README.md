@@ -1,5 +1,5 @@
-# Pollution and Emissions: Analysing and visualising the efficacy of international climate initiatives (COP26) through data 
-## _An outlook into our project, our journey and our dyanmic Streamlit application extending our research & analysis to the whole world 🌎_
+# Pollution and Emissions: Analysing and visualising the efficacy of COP26 Through Data 
+## _An outlook into our project, our journey and our dynamic Streamlit application extending our research & analysis to the whole world  🌎_
 ---
 <style>
     .center {
