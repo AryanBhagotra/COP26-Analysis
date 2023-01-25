@@ -43,17 +43,26 @@ We wanted to investigate how COP26 affected the emissions of four key pollutants
 
 To help us assess the impacts that COP26 had on emissions, we used the API ?? to collect data on the emissions of these pollutants before, during and after the COP26 conference for each of these cities. We wanted to see whether, with the help of graphs and summary statistics, we would be able to uncover if there were any trends that we would be able to discern. While we initially wanted to investigate exactly how these cities changed their emissions of these pollutants, we soon realised that, to get a complete picture, it was worth analysing each and every country individually for every possible pollutant. __This is the rationale behind our Dynamic Streamlit Application, providing a complete depiction of the changes in emissions.__
 
-We investigated a number of trends - whether certain pollutants were more susceptible to change during and after the conference, whether time lags did indeed exist with respect to the pollutants and if the response of a country depended on its level of development. We extracted over HOW MANY PIECES OF DATA. If time lags do exist, it can explain why so many conferences have taken place. However, it also suggests that systemic change needs to be made with respect to how the issue of climate change is being dealt with. If the level of development of a country does, indeed, affect the extent to which pollution can be curtailed, it provides evidence for Ha-Joon Chang’s argument that the richer nations are ’Kicking Away The Ladder,’ for the less developed countries.
+We investigated a number of trends - whether certain pollutants were more susceptible to change during and after the conference, whether time lags did indeed exist with respect to the pollutants and if the response of a country depended on its level of development. We extracted over HOW MANY PIECES OF DATA. If time lags do exist, it can explain why so many conferences have taken place. However, it also suggests that systemic change needs to be made with respect to how the issue of climate change is being dealt with. If the level of development of a country does, indeed, affect the extent to which pollution can be curtailed, it provides evidence for Ha-Joon Chang’s argument that the richer nations are ’Kicking Away The Ladder,’ for the less developed countries. 🪜
 
 
 ---
 
 
-### __Our Dynamic Application Empowered By Streamlit: Analysing & Visualising All Pollutants Across All Worldwide Countries__ 💻
+### __Our Streamlit Dynamic Application: Analysing & Visualising _All_ Pollutants Across _All_ Worldwide Countries__ 💻
 
 
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg" class="center"  />
+
+As mentioned, in order to truly grasp the patterns and, potentially, causal relationships within our data; we realised at the end of our journey that in order to truly tell the tale of the efficacy of COP26 across different demographies, we needed to convey our data across much larger geographical regions - so we went with the whole world. 😁
+
+However, this required us to go beyond the remit of the project as this markdown site (as required by the project) is purely static and simply doesn't allow for any dyanmic usage. Given that we wanted our data visualisation to be interactive, we had to resort to other methods of utilising our comprehensive GitHub repository and connecting this with an app framework (that preferably supported Python lanaguage and libraries) in order to establish this interactivity.
+
+Streamlit was a fantastic app framework that enabled this, and allowed us to connect our repo and API to an interface that includes phenomenal tools of data visualisation, including a world heatmap, linegraphs and stacked barcharts for our 3 chosen periods (before, during and after COP26) for __every country__ and __every pollutant__ provided by our API.
+
+### Click on the hyperlink below to see our dynamic Streamlit application 👇
+[Our Dynamic Streamlit Application](https://amandeepn-cop26-analysis-app-05i6n6.streamlit.app)
 
 ### Click on the hyperlink below to see an introductory video 👇
 [A Video Introduction To Our Dynamic Streamlit Application](https://www.youtube.com)
