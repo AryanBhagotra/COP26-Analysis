@@ -1,5 +1,15 @@
+remote_theme: pages-themes/cayman@v0.2.0
+
+
+
 plugins:
   - jekyll-relative-links
+  - jekyll-remote-theme
+  
+  
+title: [Pollution & Emissions: Analysing & Visualising The Efficacy of International Climate Initiatives (COP26) Through Data]
+description: [By Aryan Bhagotra & Amandeep Nagra]
+
 relative_links:
   enabled: true
   collections: true
