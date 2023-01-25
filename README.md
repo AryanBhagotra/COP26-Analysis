@@ -27,8 +27,8 @@ preserving the environment intersected with our interests in Data Science that w
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg" class="center"  />
 
 
-### Click on the link below to see an introductory video 👇
-![https://www.youtube.com]
+### Click on the hyperlink below to see an introductory video 👇
+![A Video Introduction To Our Dynamic Streamlit Application](https://www.youtube.com)
 
 Upon further research, it became clear that the science, policy and communication practices
 around DS will impact the solutions we utilise into the future with climate change. Data science
