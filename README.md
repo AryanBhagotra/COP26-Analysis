@@ -31,11 +31,11 @@ We wanted to look at several conferences and understand how they differ in their
 2.	A cluster with emerging cities (Delhi and São Paulo)
 3.	A cluster with lower income cities (Gaborone and Port-Au-Prince)
 
-We wanted to investigate how COP26 affected the emissions of four key pollutants:
-1.	Carbon Monoxide: carbon monoxide occurs primarily from the emissions of fossil-fuel powered engines.
-2.	Oxygen Trioxide: when inhaled, this pollutant can cause severe damage to the lungs.
-3.	Nitrous Dioxide: occurs primarily from cars, trucks, and buses. It reacts to form Nitric acid – leading to the acidification of water bodies and causing biodiversity loss.
-4.	PM2.5 Particulates: exposure to PM2.5 has been said to cause premature mortality.
+We wanted to investigate how COP26 affected the emissions of four key pollutants 💨:
+1.	__Carbon Monoxide__: carbon monoxide occurs primarily from the emissions of fossil-fuel powered engines.
+2.	__Oxygen Trioxide__: when inhaled, this pollutant can cause severe damage to the lungs.
+3.	__Nitrous Dioxide__: occurs primarily from cars, trucks, and buses. It reacts to form Nitric acid – leading to the acidification of water bodies and causing biodiversity loss.
+4.	__PM2.5 Particulates__: exposure to PM2.5 has been said to cause premature mortality.
 
 To help us assess the impacts that COP26 had on emissions, we used the API ?? to collect data on the emissions of these pollutants before, during and after the COP26 conference for each of these cities. We wanted to see whether, with the help of graphs and summary statistics, we would be able to uncover if there were any trends that we would be able to discern. While we initially wanted to investigate exactly how these cities changed their emissions of these pollutants, we soon realised that, to get a complete picture, it was worth analysing each and every country individually for every possible pollutant. This is the rationale behind our Dynamic Streamlit Application, providing a complete depiction of the changes in emissions. 
 
