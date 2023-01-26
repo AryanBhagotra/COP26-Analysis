@@ -43,17 +43,17 @@ We wanted to investigate how COP26 affected the emissions of four key pollutants
 
 To help us assess the impacts that COP26 had on emissions we used the OpenWeatherMap’s API to access data relating to each of our time periods – pre, during and post the conference. We defined these periods as:
 
-1.	__We accessed data before the COP26 conference__ (01/12/20 – 31/10/21)
-2.	__We accessed data during the COP26 conference__ (01/11/21 – 30/11/21)
-3.	__We accessed data after the COP26 conference__ (01/12/21 – 01/12/22)
+1.  We accessed data __before__ the COP26 conference __(01/12/20 – 31/10/21)__
+2.  We accessed data __during__ the COP26 conference __(01/11/21 – 30/11/21)__
+3.	We accessed data __after__ the COP26 conference __(01/12/21 – 01/12/22)__
 
 We wanted to see whether, with the help of graphs and summary statistics, we would be able to uncover if there were any trends that we would be able to discern. While we initially wanted to investigate exactly how these cities changed their emissions of these pollutants, we soon realised that, to get a complete picture, it was worth analysing each and every country individually for every possible pollutant. __This is the rationale behind our Dynamic Streamlit Application, providing a complete depiction of the changes in emissions.__
 
 We investigated a number of trends - whether certain pollutants were more susceptible to change during and after the conference, whether time lags did indeed exist with respect to the pollutants and if the response of a country depended on its level of development. We collected data on 249 countries, with 757 JSON files. Each file contained an awful lot of data points, and after parsing the data points we got:
 
-1.	__The data before the COP26 conference had 2,000,000 data points__ (this classification had the longest duration.)
-2.	__The data during the COP26 conference had 173,000 data points__
-3.	__The data after the COP26 conference had 221,000 data points__
+1.	The data __before__ the COP26 conference had __2,000,000 data points__ (this classification had the __longest__ duration.)
+2.	The data __during__ the COP26 conference had __173,000 data points__
+3.	The data __after__ the COP26 conference had __221,000 data points__
 
 If time lags do exist, it can explain why so many conferences have taken place. However, it also suggests that systemic change needs to be made with respect to how the issue of climate change is being dealt with. If the level of development of a country does, indeed, affect the extent to which pollution can be curtailed, it provides evidence for Ha-Joon Chang’s argument that the richer nations are ’Kicking Away The Ladder,’ for the less developed countries. 🪜
 
