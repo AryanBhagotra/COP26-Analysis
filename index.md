@@ -98,9 +98,7 @@ environmental initiatives being introduced. We were very interested in learning 
 effect these initiatives had on the pollution levels of different countries. Given our API
 restrictions (will be examined further), we decided to focus on COP26.
 
-We are interested in answering the following questions to help us further examine the efficacy of
-climate initiatives (COP26) and, moreover, ask ourselves exactly what this means for the
-environment:
+We are interested in answering the following questions to help us further examine the efficacy of climate initiatives (COP26) and, moreover, ask ourselves exactly what the implications of this are for the environment:
 - Why have so many different climate initiatives been introduced over time?
 - Did COP26 in particular turn out to be successful?
 - What did the initiative have the largest impact on?
