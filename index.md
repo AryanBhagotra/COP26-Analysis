@@ -51,7 +51,7 @@ We wanted to see whether, with the help of graphs and summary statistics, we wou
 
 We investigated a number of trends - whether certain pollutants were more susceptible to change during and after the conference, whether time lags did indeed exist with respect to the pollutants and if the response of a country depended on its level of development. We collected data on 249 countries, with 757 JSON files. Each file contained an awful lot of data points, and after parsing the data points we got:
 
-1.	The data __before__ the COP26 conference had __2,000,000 data points__ (this classification had the __longest__ duration.)
+1.	The data __before__ the COP26 conference had __2,000,000 data points__ (this classification had the __longest duration__)
 2.	The data __during__ the COP26 conference had __173,000 data points__
 3.	The data __after__ the COP26 conference had __221,000 data points__
 
