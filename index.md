@@ -49,7 +49,7 @@ To help us assess the impacts that COP26 had on emissions we used the OpenWeathe
 
 We wanted to see whether, with the help of graphs and summary statistics, we would be able to uncover if there were any trends that we would be able to discern. While we initially wanted to investigate exactly how these cities changed their emissions of these pollutants, we soon realised that, to get a complete picture, it was worth analysing each and every country individually for every possible pollutant. __This is the rationale behind our Dynamic Streamlit Application, providing a complete depiction of the changes in emissions.__
 
-We investigated a number of trends - whether certain pollutants were more susceptible to change during and after the conference, whether time lags did indeed exist with respect to the pollutants and if the response of a country depended on its level of development. We collected data on 249 countries, with 757 JSON files. Each file contained an awful lot of data points, and after parsing the data points we got:
+We investigated a number of trends - whether certain pollutants were more susceptible to change during and after the conference, whether time lags did indeed exist with respect to the pollutants and if the response of a country depended on its level of development. We collected data on 249 countries, with 757 JSON files. Each file contained an awful lot of data points, and after parsing the data points we can summarise as:
 
 1.	The data __before__ the COP26 conference had __2,000,000 data points__ (this classification had the __longest duration__)
 2.	The data __during__ the COP26 conference had __173,000 data points__
