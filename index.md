@@ -99,59 +99,65 @@ In fact, we were immediately presented with an almost external validation of our
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/3.jpg" class="center"  />
 
+---
+
+
+### __Preliminary Targets__ 🎯
+
+
+Our initial targets following our complete change of project centred around investigating the efficacy of the climate initiatives. We have seen, over the last few decades, countless environmental initiatives being introduced. We were very interested in learning exactly what effect these initiatives had on the pollution levels of different countries. 
 
 
 
-
-<ins> Preliminary Targets: </ins>
-Our initial targets following our complete change of project centred around investigating the
-efficacy of the climate initiatives. We have seen, over the last few decades, countless
-environmental initiatives being introduced. We were very interested in learning exactly what
-effect these initiatives had on the pollution levels of different countries. Given our API
-restrictions (will be examined further), we decided to focus on COP26.
-
-We are interested in answering the following questions to help us further examine the efficacy of climate initiatives (COP26) and, moreover, ask ourselves exactly what the implications of this are for the environment:
-- Why have so many different climate initiatives been introduced over time?
-- Did COP26 in particular turn out to be successful?
-- What did the initiative have the largest impact on?
-- Do different countries respond differently to these initiatives?
-- Do discrepancies in the response of emerging and developed nations exist?
-- What impacts have these initiatives had on the Air Quality Index and other polluting gasses?
-- What time lags are associated with these initiatives?
-- What are the short, medium and long-term effects of COP26 on the environment?
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/4.jpg" class="center"  />
-<ins>Our Dataset’s Chosen Locations:</ins>
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/5.jpg" class="center"  />
-We decided to investigate the effects of COP26 on the emissions of these six cities. We decided
-to put the cities into three clusters:
-Cluster containing High Income Cities: London and Washington DC
 
-Cluster containing Newly Emerging Cities: Delhi and Gaborone
 
-Cluster containing Low Income Cities: São Paulo and Delhi
 
-It is important to note that we initially wanted to explore the impact on Beijing, but inputting the
-longitude/latitude into the API kept generating an error, and we decided instead to investigate
-the effects of COP26 on the pollution in São Paulo instead - which is in a similar
 
-The choice of our 6 cities was entirely orientated around the fact that we wanted to have a
-dimension of our findings that examined the extent of environmental response, and how this
-depended on the level of economic growth that was encountered by a country. Our 6 locations
-allowed us to gather good intel on a range of countries that were epitomes of their economic
-categories.
+Given our API restrictions (will be examined further), we decided to focus on COP26.
 
-Generally, economic theory produces 5 fundamental reasons why the level of environmental
-response might vary by how wealthy a country is:
+We are interested in answering the following questions to help us further examine the efficacy of climate initiatives (COP26) and, moreover, ask ourselves exactly what the implications of this are for the environment: 🌱
 
-1. Financial resources: Wealthy countries typically have more financial resources to invest in environmental protection and sustainability initiatives. They can afford to implement more expensive and advanced technologies to reduce pollution and protect natural resources.
+- _Why have so many different climate initiatives been introduced over time?_
+- _Did COP26 in particular turn out to be successful?_
+- _What did the initiative have the largest impact on?_
+- _Do different countries respond differently to these initiatives?_
+- _Do discrepancies in the response of emerging and developed nations exist?_
+- _What impacts have these initiatives had on the Air Quality Index and other polluting gasses?_
+- _What time lags are associated with these initiatives?_
+- _What are the short, medium and long-term effects of COP26 on the environment?_
 
-2. Economic priorities: Developing countries may prioritise economic growth over environmental protection, as they may see environmental regulations as a hindrance to economic development. On the other hand, developed countries may have a stronger emphasis on environmental protection as their economy has already been established.
 
-3. Political will: Wealthy countries may have a stronger political will to address environmental issues, as they have the resources and stability to implement policies and regulations to protect the environment. Developing countries may have less political will to address environmental issues due to lack of resources and other pressing concerns.
+---
 
-4. Public awareness: Developed countries generally have higher levels of education and more access to information, which can lead to greater public awareness and concern about environmental issues. This can lead to greater pressure on governments and businesses to take action to protect the environment.
+## Methodology
 
-5. Technological capabilities: Wealthy countries typically have greater technological capabilities to address environmental issues, including the ability to monitor and assess the state of the environment, the ability to develop and implement new technologies to reduce pollution and protect natural resources, and the ability to adapt to the impacts of climate change.
+
+### __Our Dataset’s Chosen Locations__ 📍
+
+
+__Before we expanded our data to the whole world)__ _(through our interactive application)_, We decided to investigate the effects of COP26 on the emissions of the six cities aforementioned _(London, Washington DC, Delhi, São Paulo, Gaborone and Port-Au-Prince). As also mentioned, we decided to put the cities into three clusters:
+
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/6.jpg" class="center"  />
+
+
+It is important to note that we initially wanted to explore the impact on Beijing, but inputting the longitude/latitude into the API return a NaN value (will be explored further), and we decided instead to investigate the effects of COP26 on the pollution in São Paulo instead - which is at a similar stage in its economic development.
+
+The choice of our 6 cities was entirely orientated around the fact that we wanted to have a dimension of our findings that examined the extent of environmental response, and how this depended on the level of economic growth that was encountered by a country. Our 6 locations allowed us to gather good intel on a range of countries that were epitomes of their economic categories.
+
+
+### Generally, economic theory produces 5 fundamental reasons why the level of environmental response might vary by how wealthy a country is: 💸
+
+1. __Financial resources:__ Wealthy countries typically have more financial resources to invest in environmental protection and sustainability initiatives. They can afford to implement more expensive and advanced technologies to reduce pollution and protect natural resources.
+
+2. __Economic priorities:__ Developing countries may prioritise economic growth over environmental protection, as they may see environmental regulations as a hindrance to economic development. On the other hand, developed countries may have a stronger emphasis on environmental protection as their economy has already been established.
+
+3. __Political will:__ Wealthy countries may have a stronger political will to address environmental issues, as they have the resources and stability to implement policies and regulations to protect the environment. Developing countries may have less political will to address environmental issues due to lack of resources and other pressing concerns.
+
+4. __Public awareness:__ Developed countries generally have higher levels of education and more access to information, which can lead to greater public awareness and concern about environmental issues. This can lead to greater pressure on governments and businesses to take action to protect the environment.
+
+5. __Technological capabilities:__ Wealthy countries typically have greater technological capabilities to address environmental issues, including the ability to monitor and assess the state of the environment, the ability to develop and implement new technologies to reduce pollution and protect natural resources, and the ability to adapt to the impacts of climate change.
 
 We want to see how these fundamental tenets in the relationship between level of economic
 wealth and responsiveness to climate change can be visualised and scrutinised with data
