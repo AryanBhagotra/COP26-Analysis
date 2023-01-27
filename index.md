@@ -147,7 +147,8 @@ It is important to note that we initially wanted to explore the impact on Beijin
 The choice of our 6 cities was entirely orientated around the fact that we wanted to have a dimension of our findings that examined the extent of environmental response, and how this depended on the level of economic growth that was encountered by a country. Our 6 locations allowed us to gather good intel on a range of countries that were epitomes of their economic categories.
 
 
-### Generally, economic theory produces 5 fundamental reasons why the level of environmental response might vary by how wealthy a country is: 💸
+### Economic theory produces 5 fundamental reasons why the level of environmental response might vary by how wealthy a country is 💸
+
 
 1. __Financial resources:__ Wealthy countries typically have more financial resources to invest in environmental protection and sustainability initiatives. They can afford to implement more expensive and advanced technologies to reduce pollution and protect natural resources.
 
