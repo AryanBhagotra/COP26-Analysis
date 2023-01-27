@@ -332,7 +332,7 @@ The diagram above _illustrates_ this process.
 ### __Preliminary Visualisation (Time Series)__ 📈
 
 
-Briefly explaining some of the code we employed in the experimentation we started off with; MatPlotLib provided the basis of our preliminary experimentation. This is something that we have already dealt with through problem sets and on the few python courses we have done ourselves. 
+Briefly explaining some of the code we employed in the experimentation we started off with; MatPlotLib provided the basis of our preliminary experimentation. This is something that we have already dealt with through Problem Aets and on the few Python courses we have done ourselves; and had developed a marked expertise in!
 
 But, in essence __we started off by plotting graphs of the same pollutant _(on this page you can see PM2.5)_ for our 6 different cities and timeframes; that being before, during and after COP26.
 
@@ -437,7 +437,7 @@ Using a Unix time converter, we converted the start and end dates into the unix 
 
 
 
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/24.jpg" class="center"  />
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/21.jpg" class="center"  />
 
 
 
@@ -450,7 +450,7 @@ __Step 2 - Cleaning the Data__
 Using our example of São Paulo, let’s walk you through each step behind the cleaning of the data and then, moreover, how we employed this cleaning to pivot, melt and mutate our data:
 
 
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/25.jpg" class="center"  />
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/22.jpg" class="center"  />
 
 
 1. We used the combine function to make the data frames into a single list and assigned it to the variable ‘combined,’ this allowed us to loop through the data frames; allowing us to execute the column dropping and concatenation as efficiently as possible.
@@ -472,7 +472,7 @@ Using our example of São Paulo, let’s walk you through each step behind the c
 
 As the outcome of this cleaning, which required a process of __pivoting, melting and mutating our data__, can see when we visualise our same example of Sao Paulo, we have a much cleaner dataframe:
 
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/26.jpg" class="center"  />
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/23.jpg" class="center"  />
 
 
 The dates for our 17,500 rows for this location over the total time we are able to access are very clear, as are the pollutants we have a particular interest in which find their associated values going down on the left hand side.
@@ -482,68 +482,103 @@ The dates for our 17,500 rows for this location over the total time we are able 
 
 
 
-### __Initial Heatmap Exploration__
+### __Initial Heatmap Exploration__ 🚀
 
 
-We know began to ask ourselves the question: _What does this clean data mean in terms of hard core data visualisation?_
+__We now began to ask ourselves the question:__ _What does this clean data mean in terms of hard core data visualisation?_
+
+In week 8 and 11 of the course, we did a lot of work with MatPlotLib in order to produce some basic continuous graphs of air pollutants across our 3 distinct time frames of pre, during and post COP26 for all of our cities. 
+
+But one of the biggest criticisms we had for ourselves was that we wanted to be __a little more creative__, we wanted to be __a little more advanced.__
+
+So we entered the wonderful world of heatmaps. Which, through a process of continuous refinement as we will present below, really ended up being a phenomenal way to visualise, compare and contrast air pollution metrics across time periods.
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/24.jpg" class="center"  />
+
+The above here shows some of our initial efforts. We can see that our heatmaps are initially quite obscure, and whilst showed an accurate reflection of variation in all of our pollution metrics across all of our cities across the whole time period provided by the API, we were still unable to get clear information out of this and moreover, information that could then provide the grounds of summary stats in order to really help us answer the question at hand.
 
 
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/27.jpg" class="center"  />
-What does this clean data mean in terms of hard core data visualisation?
-In week 8 of the course, we did a lot of work with MatPlotLib in order to produce some basic
-continuous graphs of air pollutants across our 3 distinct time frames of pre, during and post
-COP26 for all of our cities. But one of the biggest criticisms we had for ourselves was that we
-wanted to be a little more creative, we wanted to be a little more advanced.
+---
 
-So we entered the wonderful world of heatmaps. Which, through a process of continuous
-refinement as we will present over the next few slides, really ended up being a phenomenal way
-to visualise, compare and contrast air pollution metrics across time periods.
 
-The above here shows some of our initial efforts. We can see that our heatmaps are initially
-quite obscure, and whilst showed an accurate reflection of variation in all of our pollution metrics
-across all of our cities across the whole time period provided by the API, we were still unable to
-get clear information out of this and moreover, information that could then provide the grounds
-of summary stats in order to really help us answer the question at hand.
-<ins>Further Heatmap Exploration:</ins>
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/28.jpg" class="center"  />
-These more refined heatmaps try to elucidate what the real target areas had been during the
-cop26 initiative. The X axis includes the days of the week, whilst the Y axis involves the different
-months. We see that, for all of the countries (excluding Gaborone - the missing data which, as
-explored through NAN values) didn't return us with a heatmap; we will explore this in Statistical
-inference. There seems to be the highest pollution in the middle of the year, which ceases
-slightly towards the latter points of the year. It seems intuitive, that there are short term time lags
-at least whilst the plans are being introduced.
-<ins>Refining Our Heatmaps:</ins>
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/29.jpg" class="center"  />
-After our attempts, we really bolstered down our efforts to create a much clearer and more
-representative heatmap.
+### __Further Heatmap Exploration__ 
+
+
+These more refined heatmaps try to elucidate what the real target areas had been during the COP26 initiative: 
+
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/25.jpg" class="center"  />
+
+
+The X axis includes the days of the week, whilst the Y axis involves the different months. We see that, for all of the countries (excluding Gaborone - the missing data which, as explored through NAN values) didn't return us with a heatmap; we will explore this in Statistical Inference. There seems to be the highest pollution in the middle of the year, which ceases slightly towards the latter points of the year. 
+
+It seems intuitive, that there are short term time lags at least whilst the plans are being introduced.
+
+
+---
+
+
+### __Refining Our Heatmaps___
+
+
+After our attempts, we really bolstered down our efforts to create a much _clearer_ and more _representative_ heatmap.
+
 After much persistence, we were able to do this; the following providing the steps:
-In step number 1, we import the datetime module. This is the heart and essence of our ability to
+
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/26.jpg" class="center"  />
+
+
+In __step number 1__, we import the datetime module. This is the heart and essence of our ability to
 break pollution data by time and date.
 
-In step number 2, we rename our columns so that they make sense.
+In __step number 2__, we rename our columns so that they make sense.
 
-In step number 3, we proceed to concatenate all 6 of our locational data frames/
+In __step number 3__, we proceed to concatenate all 6 of our locational data frames/
 
-In step number 4 proceed to drop NaN values and you can see some of this in step number 5,
+In __step number 4__, we proceed to drop NaN values and you can see some of this in step number 5,
 where when we visualise this dataframe, you can see a slew of 0s for the data concerning
 gaborone, where we had a considerable problem with missing data.
 
-In our final step, we then use calplot, which is a function that creates heatmaps from pandas
-time series data. And enables us to structure our heatmaps such that they are colour coded by
-calendar days.
-<ins>The Outcome Of Our Refinement:</ins>
-Below presents our final and refined heatmaps. It is clear that, through these, we are able to tell
-a story. This is particularly relevant as we begin to examine the specific measures that were
-undertaken by each respective country:
-1. Washington: Washington, D.C. had moderate levels of air pollution before COP26. During the conference, the US government announced new plans to reduce emissions from the transportation sector. As a result, heat maps show a small decrease in pollution levels in Washington, D.C. during and after COP26.
-2. Sao Paulo: Sao Paulo had high levels of air pollution before COP26. However, during the conference, the Brazilian government announced new plans to reduce emissions from the transportation and industrial sectors. As a result, heat maps show a moderate decrease in pollution levels in Sao Paulo during and after COP26.
-3. Gaborone: Gaborone had relatively low levels of air pollution before COP26. However, during the conference, the Botswana government did not announce any major plans to reduce emissions. Heat maps show little to no change in pollution levels in Gaborone during and after COP26.
-4. London: London had relatively low levels of air pollution before COP26. During the conference, the UK government announced new targets for reducing emissions from the power sector. As a result, heat maps show a small decrease in pollution levels in London during and after COP26.
-5. Delhi: Delhi had high levels of air pollution before COP26. However, during the conference, the Indian government did not implement as many strict regulations. Heat maps show only a slight decrease in pollution levels in Delhi during and after COP26. 6. Port-au-Prince: Port-au-Prince had moderate levels of air pollution before COP26. However, during the conference, the Haitian government did not announce any major plans to reduce emissions. Heat maps show little to no change in pollution levels in Portau-Prince during and after COP26.
+In __our final step__, we then use calplot, which is a function that creates heatmaps from pandas time series data. And enables us to structure our heatmaps such that they are colour coded by calendar days.
+
+
+---
+
+
+### __The Outcome Of Our Refinement__
+
+
+Below presents our final and refined heatmaps. It is clear that, through these, we are able to tell a story. Starting with our findings for São Paulo and London across our 3 time periods:
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/27.jpg" class="center"  />
+
+And further presenting our findings for our other 4 locations across our 3 time periods:
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/28.jpg" class="center"  />
+
+This is particularly relevant as we begin to examine the specific measures that were undertaken by each respective country:
+
+1. __Washington:__ Washington, D.C. had moderate levels of air pollution before COP26. During the conference, the US government announced new plans to reduce emissions from the transportation sector. As a result, heat maps show a small decrease in pollution levels in Washington, D.C. during and after COP26.
+
+2. __Sao Paulo:__ Sao Paulo had high levels of air pollution before COP26. However, during the conference, the Brazilian government announced new plans to reduce emissions from the transportation and industrial sectors. As a result, heat maps show a moderate decrease in pollution levels in Sao Paulo during and after COP26.
+
+3. __Gaborone:__ Gaborone had relatively low levels of air pollution before COP26. However, during the conference, the Botswana government did not announce any major plans to reduce emissions. Heat maps show little to no change in pollution levels in Gaborone during and after COP26.
+
+4. __London:__ London had relatively low levels of air pollution before COP26. During the conference, the UK government announced new targets for reducing emissions from the power sector. As a result, heat maps show a small decrease in pollution levels in London during and after COP26.
+
+5. __Delhi:__ Delhi had high levels of air pollution before COP26. However, during the conference, the Indian government did not implement as many strict regulations. Heat maps show only a slight decrease in pollution levels in Delhi during and after COP26. 
+
+6. __Port-au-Prince:__ Port-au-Prince had moderate levels of air pollution before COP26. However, during the conference, the Haitian government did not announce any major plans to reduce emissions. Heat maps show little to no change in pollution levels in Portau-Prince during and after COP26.
+
+
+---
+
+__Statistical Inference__
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/30.jpg" class="center"  />
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/31.jpg" class="center"  />
-<ins>Statistical Inference:</ins>
+
 We wished to analyse the correlation between each of the pollutants before, during and after the
 COP26 initiative. We see here that there is a very strong relationship between carbon monoxide
 and no2 in Sao Paulo, during the pandemic this actually weakened - to 0.73 before slightly
@@ -560,6 +595,11 @@ correlation of 0.36 existed between the two), which actually fell to 0.11 during
 did, however, slightly increase to 0.4 after the conference; perhaps once again indicating the time
 lag.
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/33.jpg" class="center"  />
+
+
+---
+
+
 <ins>Our Verdict & Answer:</ins>
 As we discussed, we found different countries responded differently to the conference:
 We saw the countries demonstrated time lags when it came to their emissions; they generally
