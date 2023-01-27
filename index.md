@@ -133,10 +133,11 @@ We are interested in answering the following questions to help us further examin
 ## Methodology
 
 
+
 ### __Our Dataset’s Chosen Locations__ 📍
 
 
-__Before we expanded our data to the whole world)__ _(through our interactive application)_, We decided to investigate the effects of COP26 on the emissions of the six cities aforementioned _(London, Washington DC, Delhi, São Paulo, Gaborone and Port-Au-Prince). As also mentioned, we decided to put the cities into three clusters:
+Before we expanded our data to the whole world _(through our interactive application)_, we decided to investigate the effects of COP26 on the emissions of the six cities aforementioned _(London, Washington DC, Delhi, São Paulo, Gaborone and Port-Au-Prince)_. As also mentioned, we decided to put the cities into three clusters:
 
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/6.jpg" class="center"  />
@@ -147,7 +148,7 @@ It is important to note that we initially wanted to explore the impact on Beijin
 The choice of our 6 cities was entirely orientated around the fact that we wanted to have a dimension of our findings that examined the extent of environmental response, and how this depended on the level of economic growth that was encountered by a country. Our 6 locations allowed us to gather good intel on a range of countries that were epitomes of their economic categories.
 
 
-### Economic theory produces 5 fundamental reasons why the level of environmental response might vary by how wealthy a country is 💸
+### Economic theory produces 5 fundamental reasons why the level of environmental response might vary by how wealthy a country is: 💸
 
 
 1. __Financial resources:__ Wealthy countries typically have more financial resources to invest in environmental protection and sustainability initiatives. They can afford to implement more expensive and advanced technologies to reduce pollution and protect natural resources.
@@ -160,45 +161,60 @@ The choice of our 6 cities was entirely orientated around the fact that we wante
 
 5. __Technological capabilities:__ Wealthy countries typically have greater technological capabilities to address environmental issues, including the ability to monitor and assess the state of the environment, the ability to develop and implement new technologies to reduce pollution and protect natural resources, and the ability to adapt to the impacts of climate change.
 
-We want to see how these fundamental tenets in the relationship between level of economic
-wealth and responsiveness to climate change can be visualised and scrutinised with data
-science. Our choice of these 6 cities enabled us to do exactly this. Furthermore (and perhaps
-more fundamentally) when it came to deciding which countries to use as part of our analysis we
-first identified the signatories of COP26. All of these countries had, to different extents,
-committed to the conference and made pledges. 
-<ins>Our Choice of Further Variables (Dates and Pollutants): </ins>
-Dates (or, perhaps more accurately, our lack of them) were wholly based on our limited choice
-of data sets - we will examine this further in the next section.
-As for our choice of pollutants, we had quickly discerned that we required a range of different
-pollutants in order to avoid the impacts of any selection bias that could have arisen from
-selecting only one pollution metric.
-Descriptions for our chosen pollutants are as follows:
-- The first polluting gas we looked at was Carbon Monoxide. Carbon monoxide occurs primarily from emissions by fossil-fuel powered engines. We decided to look into Carbon Monoxide as one of our pollutants of interest as the API was able to return data on it. It seemed natural to focus on the evolution of this gas with the advent of the climate initiative
-- We then decided to look at Ozone/ Oxygen Trioxide. When inhaled, ozone causes severe damage to the lungs. Ozone absorbs radiation, consequently acting as a greenhouse gas. As such a big contributor to the greenhouse effect, we felt it logical to investigate its evolution,
-- NO2 or nitrous dioxide occurs primarily from cars, buses and trucks. It gets into the atmosphere, reacting to form Nitric acid (acid rain). This acid rain causes damage to buildings and causes the acidification of water bodies, contributing to biodiversity loss.
-- We also examined the fine particulates (PM2.5) - these appear in the air, reducing the visibility. Exposure to PM2.5 has been said to cause premature mortality - so we chose to investigate this as our fourth metric of interest.
-<ins>Potential Datasets:</ins>
-We found out a lot of data was available online. Below are the sources we found, with the
-respective numbers of datasets that each source held:
-1. Open Weather Map’s API
-2. WHO GHO OData API
-3. European Environment Agency had 227 datasets available for use
-4. Data.gov had 12 datasets available for use
-5. Data.gov.uk had 7 datasets available for use
-6. UKCOP26 had 4 datasets available for use
-7. Local Government Associate had 5 datasets available for use
+We want to see how these fundamental tenets in the relationship between level of economic wealth and responsiveness to climate change can be visualised and scrutinised with data science. 
+
+Our initial choice of these 6 cities enabled us to do exactly this. Furthermore (and perhaps more fundamentally) when it came to deciding which countries to use as part of our analysis we first identified the signatories of COP26. All of these countries had, to different extents,committed to the conference and made pledges. ✍️
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/6.jpg" class="center"  />
-1. OpenWeather Air Pollution API - this was a phenomenal API that had a wealth of historical data covering 20 years of air pollution information across 9 different metrics from all across the world, bar a few key examples like Beijing.
-2. OpenWeather’s Main alternative that we were looking at: the WHO GHO OData API. This proved to be a weaker option as the Air Pollution API by OpenWeather had a much more comprehensive repository of historical data than the WHO’s OData API. Although the WHO’s OData API covered a far larger number of years stemming from 2010-2019, it had actually taken an annual mean of each year of that data. Meaning that this API only provided 9 rows of historical data. We were initially attracted to this as we thought it would be a good idea to perhaps look at a range of climate protocols: the kyoto protocol of 1997, the Paris Agreement of 2016; but ultimately we realised given the severe lack of data, this wouldn’t be feasible. We ended up focusing on COP26 of 2021 and made the most of the OpenWeather Historical API to make use of the very comprehensive data it provided from over the past 2 years. Secondly and more briefly, the WHO’s OData API only provided data on PM2.5, a type of particulate; we wanted to discuss a wider range of pollutant gases that, come statistical inference, would allow us to answer our question with greater conviction.
-3. 3 - 7 covers a few other sources as well that contain many relevant datasets for use. However, whether due to lack of scale, or indeed lack of applicability to the variables we were looking to analyse, we decided that the OpenWeather Air Pollution API proved to be the best dataset to answer our question and to truly examine the scale and efficacy of COP26, and be able to employ that geographical perspective as well.
-<ins>Our Chosen Datasets: </ins>
-Our chosen dataset: The OpenWeather Air Pollution API.
-The OpenWeather API does a fantastic job of giving us access to an insanely comprehensive
-dataset; monitoring and providing both present and historical air pollution data on any
+
+
+
+---
+
+
+
+### __Potential Datasets - Our Options__ 📊
+
+
+We found out a lot of data was available online to address our objective. Below are the sources we found, with the
+respective numbers of datasets that each source held:
+
+1. __Open Weather Map’s API__
+2. __WHO GHO OData API__
+3. __European Environment Agency had 227 datasets available for use__
+4. __Data.gov had 12 datasets available for use__
+5. __Data.gov.uk had 7 datasets available for use__
+6. __UKCOP26 had 4 datasets available for use__
+7. __Local Government Associate had 5 datasets available for use__
+
+Based on our options above, the following provided our general consensus:
+
+
+- OpenWeather Air Pollution API - this was a phenomenal API that had a wealth of historical data covering 20 years of air pollution information across 9 different metrics from all across the world, bar a few key examples like Beijing.
+- OpenWeather’s main alternative that we were looking at: the WHO GHO OData API. This proved to be a weaker option as the Air Pollution API by OpenWeather had a much more comprehensive repository of historical data than the WHO’s OData API. Although the WHO’s OData API covered a far larger number of years stemming from 2010-2019, it had actually taken an annual mean of each year of that data. Meaning that this API only provided 9 rows of historical data. We were initially attracted to this as we thought it would be a good idea to perhaps look at a range of climate protocols: the kyoto protocol of 1997, the Paris Agreement of 2016; but ultimately we realised given the severe lack of data, this wouldn’t be feasible. We ended up focusing on COP26 of 2021 and made the most of the OpenWeather Historical API to make use of the very comprehensive data it provided from over the past 2 years. Secondly and more briefly, the WHO’s OData API only provided data on PM2.5, a type of particulate; we wanted to discuss a wider range of pollutant gases that, come statistical inference, would allow us to answer our question with greater conviction.
+- 3 - 7 covers a few other sources as well that contain many relevant datasets for use. However, whether due to lack of scale, or indeed lack of applicability to the variables we were looking to analyse, we decided that the OpenWeather Air Pollution API proved to be the best dataset to answer our question and to truly examine the scale and efficacy of COP26, and be able to employ that geographical perspective as well.
+
+
+
+---
+
+
+
+### __Our Chosen Dataset__ 👌
+
+
+Our chosen dataset: __The OpenWeather Air Pollution API__
+
+
+The OpenWeather API does a fantastic job of giving us access to an insanely comprehensive dataset; monitoring and providing both present and historical air pollution data on any
 coordinates, provided by latitude and longitude, in the world.
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/7.jpg" class="center"  />
-We mentioned that there were indeed a few limitations from the point of view of the historical
-reach of the data. As mentioned we wanted to initially look at a range of global climate initiatives
+
+
+We mentioned that there were indeed a few limitations from the point of view of the historical reach of the data. As mentioned we wanted to initially look at a range of global climate initiatives
 extending back some 30 years but were unable to do so because of precisely this issue. We
 determined that by virtue of the data extending back to November 2020 and continuing to the
 present day, examining 1 climate protocol, COP26, was the best way forward. This took place in
