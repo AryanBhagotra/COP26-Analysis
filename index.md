@@ -174,7 +174,30 @@ Our initial choice of these 6 cities enabled us to do exactly this. Furthermore 
 
 
 
+### __Our Choice of Further Variables (Dates and Pollutants)__ 📅 💨
+
+
+
+Dates (or, perhaps more accurately, our lack of them) were wholly based on our limited choice of data sets - we will examine this further in the next section. As for our choice of pollutants, we had quickly discerned that we required a range of different pollutants in order to avoid the impacts of any selection bias that could have arisen from selecting only one pollution metric. 
+
+Descriptions for our chosen pollutants are as follows:
+
+- The first polluting gas we looked at was __Carbon Monoxide.__ Carbon monoxide occurs primarily from emissions by fossil-fuel powered engines. We decided to look into Carbon Monoxide as one of our pollutants of interest as the API was able to return data on it. It seemed natural to focus on the evolution of this gas with the advent of the climate initiative
+
+- We then decided to look at __Ozone/ Oxygen Trioxide.__ When inhaled, ozone causes severe damage to the lungs. Ozone absorbs radiation, consequently acting as a greenhouse gas. As such a big contributor to the greenhouse effect, we felt it logical to investigate its evolution.
+
+- __NO2 or Nitrous Dioxide__ occurs primarily from cars, buses and trucks. It gets into the atmosphere, reacting to form Nitric acid (acid rain). This acid rain causes damage to buildings and causes the acidification of water bodies, contributing to biodiversity loss.
+
+- We also examined the __fine particulates (PM2.5)__. These appear in the air, reducing the visibility. Exposure to PM2.5 has been said to cause premature mortality - so we chose to investigate this as our fourth metric of interest. 
+
+
+
+---
+
+
+
 ### __Potential Datasets - Our Options__ 📊
+
 
 
 We found out a lot of data was available online to address our objective. Below are the sources we found, with the
@@ -188,12 +211,15 @@ respective numbers of datasets that each source held:
 6. __UKCOP26 had 4 datasets available for use__
 7. __Local Government Associate had 5 datasets available for use__
 
+
 Based on our options above, the following provided our general consensus:
 
 
-- OpenWeather Air Pollution API - this was a phenomenal API that had a wealth of historical data covering 20 years of air pollution information across 9 different metrics from all across the world, bar a few key examples like Beijing.
-- OpenWeather’s main alternative that we were looking at: the WHO GHO OData API. This proved to be a weaker option as the Air Pollution API by OpenWeather had a much more comprehensive repository of historical data than the WHO’s OData API. Although the WHO’s OData API covered a far larger number of years stemming from 2010-2019, it had actually taken an annual mean of each year of that data. Meaning that this API only provided 9 rows of historical data. We were initially attracted to this as we thought it would be a good idea to perhaps look at a range of climate protocols: the kyoto protocol of 1997, the Paris Agreement of 2016; but ultimately we realised given the severe lack of data, this wouldn’t be feasible. We ended up focusing on COP26 of 2021 and made the most of the OpenWeather Historical API to make use of the very comprehensive data it provided from over the past 2 years. Secondly and more briefly, the WHO’s OData API only provided data on PM2.5, a type of particulate; we wanted to discuss a wider range of pollutant gases that, come statistical inference, would allow us to answer our question with greater conviction.
-- 3 - 7 covers a few other sources as well that contain many relevant datasets for use. However, whether due to lack of scale, or indeed lack of applicability to the variables we were looking to analyse, we decided that the OpenWeather Air Pollution API proved to be the best dataset to answer our question and to truly examine the scale and efficacy of COP26, and be able to employ that geographical perspective as well.
+- __OpenWeather Air Pollution API__ - this was a phenomenal API that had a wealth of historical data covering 20 years of air pollution information across 9 different metrics from all across the world, bar a few key examples like Beijing.
+
+- OpenWeather’s main alternative that we were looking at: the __WHO GHO OData API__. This proved to be a weaker option as the Air Pollution API by OpenWeather had a much more comprehensive repository of historical data than the WHO’s OData API. Although the WHO’s OData API covered a far larger number of years stemming from 2010-2019, it had actually taken an annual mean of each year of that data. Meaning that this API only provided 9 rows of historical data. We were initially attracted to this as we thought it would be a good idea to perhaps look at a range of climate protocols: the kyoto protocol of 1997, the Paris Agreement of 2016; but ultimately we realised given the severe lack of data, this wouldn’t be feasible. We ended up focusing on COP26 of 2021 and made the most of the OpenWeather Historical API to make use of the very comprehensive data it provided from over the past 2 years. Secondly and more briefly, the WHO’s OData API only provided data on PM2.5, a type of particulate; we wanted to discuss a wider range of pollutant gases that, come statistical inference, would allow us to answer our question with greater conviction.
+
+- __3 - 7__ covers a few other sources as well that contain many relevant datasets for use. However, whether due to __lack of scale__, or indeed __lack of applicability__ to the variables we were looking to analyse, we decided that the OpenWeather Air Pollution API proved to be the best dataset to answer our question and to truly examine the scale and efficacy of COP26, and be able to employ that geographical perspective as well.
 
 
 
@@ -204,77 +230,99 @@ Based on our options above, the following provided our general consensus:
 ### __Our Chosen Dataset__ 👌
 
 
-Our chosen dataset: __The OpenWeather Air Pollution API__
+
+Our chosen dataset: [The OpenWeather Air Pollution API](https://openweathermap.org/api)
 
 
-The OpenWeather API does a fantastic job of giving us access to an insanely comprehensive dataset; monitoring and providing both present and historical air pollution data on any
-coordinates, provided by latitude and longitude, in the world.
+The OpenWeather API does a fantastic job of giving us access to an insanely comprehensive dataset; monitoring and providing both present and historical air pollution data on any coordinates, _provided by latitude and longitude_, in the world.
+
 
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/7.jpg" class="center"  />
 
 
-We mentioned that there were indeed a few limitations from the point of view of the historical reach of the data. As mentioned we wanted to initially look at a range of global climate initiatives
-extending back some 30 years but were unable to do so because of precisely this issue. We
-determined that by virtue of the data extending back to November 2020 and continuing to the
-present day, examining 1 climate protocol, COP26, was the best way forward. This took place in
-November 2021, which found itself in the middle of our timeline and, thus, opened up the
-fantastic opportunity to analyse pollution metrics in uniform time windows before, during and
-after the climate conference.
+
+We mentioned that there were indeed a few limitations from the point of view of the historical reach of the data. As mentioned we wanted to initially look at a range of global climate initiatives extending back some 30 years but were unable to do so because of precisely this issue. We determined that by virtue of the data extending back to November 2020 and continuing to the present day, examining 1 climate protocol, COP26, was the best way forward. This took place in November 2021, which found itself in the middle of our timeline and, thus, opened up the fantastic opportunity to analyse pollution metrics in uniform time windows before, during and after the climate conference.
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/8.jpg" class="center"  />
-Our API returned data on our four variables of interest. As this covered all our chosen variables,
-our choice of the OpenWeather Air Pollution API was unequivocal.
 
-<ins>Making Use of Code:</ins>
-To make our code usable, we initially had to import in all of the libraries (requests, pandas,
-numpy, json and matplotlib.), these gave us the critical tools we needed to ensure that we were
-able to access all the tools needed in order to execute all required functions to our data.
-We started by analysing OpenWeather’s Air Pollution API, seeing the total 9 variables and
-began to decipher which ones could be used to universally answer our question. For some
-obscure air pollutants like PM10, we had empty values for most countries so we had to withdraw
-the prospect of any use of these.
-Eventually we settled on using the pollutants Nitrous Oxide, Carbon Monoxide, Ozone as well
-as PM2.5 particulates as our variables of interest. We created this flowchart that can be seen
-below, to illustrate the scale, size and hierarchies involved with really finding ourselves with the
-information that we wanted to illustrate in our visual analysis:
+
+Our API returned data on our __four variables of interest.__ As this covered all our chosen variables, __our choice of the OpenWeather Air Pollution API was unequivocal.__
+
+
+---
+
+
+
+### __Making Use of Code__ 👨‍💻
+
+
+
+To make our code usable, we initially had to import in all of the libraries (requests, pandas, numpy, json and matplotlib.), these gave us the critical tools we needed to ensure that we were able to access all the tools needed in order to execute all required functions to our data.
+
+We started by analysing OpenWeather’s Air Pollution API, seeing the total 9 variables and began to decipher which ones could be used to universally answer our question. For some obscure air pollutants like PM10, we had empty values for most countries so we had to withdraw the prospect of any use of these.
+
+Eventually we settled on using the pollutants Nitrous Oxide, Carbon Monoxide, Ozone as well as PM2.5 particulates as our variables of interest. 
+
+We created this flowchart that can be seen below, to illustrate the _scale, size and hierarchies_ involved with the information that we wanted to illustrate in our visual analysis:
+
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/9.jpg" class="center"  />
-The OpenWeather API has an almost infinite amount of air pollution data that provides
-information on a daily frequency over the past 2 years from all across the globe. We found that
-each country had approximately 17,500 rows of data which across our 4 chosen variables postcleaning and 6 countries meant that we were processing calls and requests and dealing with
-approximately 945,000 individual data points.
 
-When we break this down into our clusters of 2 countries each, separated by their level of
-economic development; low income countries, newly emerging economies and high income
-countries found themselves with paginated data that was approximately equal in size at around
-315,000 data points.
 
-And then when splitting our 2 year time frame into 3 distinct and equal length periods of beforeCOP26, during-COP26 and after-COP26 we found ourselves with data points across our 4
-chosen pollution metrics at about 105,000. Which surprisingly, at least compared to other
-groups, was a lot more manageable than it had initially seemed.
 
-We utilised the drop function to allow us to drop unnecessary columns. This allowed us to drop
-the columns of the variables that we were not actually interested in (SO2, CH4).
-Using the concat function, we merged the 6 dataframes into one, main, dataframe. This made
-subsequent data operations a bit easier. We also utilised the .loc function to filter out the time
-range that we needed (pre, during and post COP26).
-<ins>Use of Pandas:</ins>
-We used the pd.Dataframe function to create the data frame itself. We then made use of several
-pandas functions such as concat (to merge the data frames together) and drop to remove
-unnecessary columns. We utilised df.rank to do dataframe operations - finding which countries
-were the largest contributors to pollution before the inception of COP26 and how these rankings
-evolved with the advent of the initiative.
-<ins>Missing data:</ins>
+Within our time frame _(approx. past 2 years)_, we found that each country had approximately __17,500 rows__ of data which across our __4 chosen variables__ postcleaning and 6 countries meant that we were processing calls and requests and dealing with approximately __945,000 individual data points__ - pretty big! 🤯 
+
+When we break this down into our clusters of 2 countries each, separated by their level of economic development; low income countries, newly emerging economies and high income countries found themselves with paginated data that was approximately equal in size at around __315,000 data points.__
+
+And then when splitting our 2 year time frame into 3 distinct and equal length periods of beforeCOP26, during-COP26 and after-COP26 we found ourselves with data points across our 4 chosen pollution metrics at about 105,000. Which surprisingly, at least compared to other groups, was a lot more manageable than it had initially seemed.
+
+We utilised the drop function to allow us to drop unnecessary columns. This allowed us to drop the columns of the variables that we were not actually interested in (SO2, CH4). Using the concat function, we merged the 6 dataframes into one, main, dataframe. This made subsequent data operations a bit easier. We also utilised the .loc function to filter out the timerange that we needed (pre, during and post COP26).
+
+
+---
+
+
+### __Use of Pandas__ 🐼
+
+
+We used the pd.Dataframe function to create the data frame itself. We then made use of several pandas functions such as concat (to merge the data frames together) and drop to remove unnecessary columns. We utilised df.rank to do dataframe operations. This enabled us to find which countries were the largest contributors to pollution before the inception of COP26 and how these rankings evolved with the advent of the initiative.
+
+
+---
+
+
+### __Missing data__ 🔍
+
+
+We had to employ the use of the __DropNA function__ for this. 
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/10.jpg" class="center"  />
-We had to employ the use of the DropNA function for this. This allowed us to remove all NaN
-values that, come data visualisation, would not be able to return anything meaningful and would
-have produced many annoying errors. You’ll see this in practice in some of the correlation data
-we will employ for Gaborone’s during and post COP26 data.
 
-<ins>Joining Several Databases:</ins>
+
+This allowed us to remove all NaN values that, come data visualisation, would not be able to return anything meaningful and would have produced many annoying errors. You’ll see this _in practice_ in some of the correlation data we will employ for Gaborone’s 'during' and 'post' COP26 data.
+
+
+---
+
+
+### __Joining Several Databases__ 🧑‍🤝‍🧑 
+
+
+We used .concat which concatenated the 6 different data frames into a singular dataframe. We then placed these multiple data frames into a singular list. 
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/11.jpg" class="center"  />
-We used .concat which concatenated the 6 different data frames into a singular dataframe. We
-then placed these multiple data frames into a singular list. The diagram towards the bottom on
-the left illustrates this process.
+
+
+The diagram above _illustrates_ this process.
+
+
+---
+
+
 <ins>Preliminary Visualisation (Time Series):</ins>
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/12.jpg" class="center"  />
 Briefly explaining some of the code we employed in the experimentation we started off with;
