@@ -163,7 +163,7 @@ The choice of our 6 cities was entirely orientated around the fact that we wante
 
 We want to see how these fundamental tenets in the relationship between level of economic wealth and responsiveness to climate change can be visualised and scrutinised with data science. 
 
-Our initial choice of these 6 cities enabled us to do exactly this. Furthermore (and perhaps more fundamentally) when it came to deciding which countries to use as part of our analysis we first identified the signatories of COP26. All of these countries had, to different extents,committed to the conference and made pledges. ✍️
+Our initial choice of these 6 cities enabled us to do exactly this. Furthermore (and perhaps more fundamentally) when it came to deciding which countries to use as part of our analysis we first identified the signatories of COP26. All of these countries had, to different extents, committed to the conference and made pledges. ✍️
 
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/5.jpg" class="center"  />
@@ -217,7 +217,12 @@ Based on our options above, the following provided our general consensus:
 
 - __OpenWeather Air Pollution API__ - this was a phenomenal API that had a wealth of historical data covering 20 years of air pollution information across 9 different metrics from all across the world, bar a few key examples like Beijing.
 
-- OpenWeather’s main alternative that we were looking at: the __WHO GHO OData API__. This proved to be a weaker option as the Air Pollution API by OpenWeather had a much more comprehensive repository of historical data than the WHO’s OData API. Although the WHO’s OData API covered a far larger number of years stemming from 2010-2019, it had actually taken an annual mean of each year of that data. Meaning that this API only provided 9 rows of historical data. We were initially attracted to this as we thought it would be a good idea to perhaps look at a range of climate protocols: the kyoto protocol of 1997, the Paris Agreement of 2016; but ultimately we realised given the severe lack of data, this wouldn’t be feasible. We ended up focusing on COP26 of 2021 and made the most of the OpenWeather Historical API to make use of the very comprehensive data it provided from over the past 2 years. Secondly and more briefly, the WHO’s OData API only provided data on PM2.5, a type of particulate; we wanted to discuss a wider range of pollutant gases that, come statistical inference, would allow us to answer our question with greater conviction.
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/7.jpg" class="center"  />
+
+
+
+- OpenWeather’s main alternative that we were looking at: the __WHO GHO OData API__ _(image above)_. This proved to be a weaker option as the Air Pollution API by OpenWeather had a much more comprehensive repository of historical data than the WHO’s OData API. Although the WHO’s OData API covered a far larger number of years stemming from 2010-2019, it had actually taken an annual mean of each year of that data. Meaning that this API only provided 9 rows of historical data. We were initially attracted to this as we thought it would be a good idea to perhaps look at a range of climate protocols: the kyoto protocol of 1997, the Paris Agreement of 2016; but ultimately we realised given the severe lack of data, this wouldn’t be feasible. We ended up focusing on COP26 of 2021 and made the most of the OpenWeather Historical API to make use of the very comprehensive data it provided from over the past 2 years. Secondly and more briefly, the WHO’s OData API only provided data on PM2.5, a type of particulate; we wanted to discuss a wider range of pollutant gases that, come statistical inference, would allow us to answer our question with greater conviction.
 
 - __3 - 7__ covers a few other sources as well that contain many relevant datasets for use. However, whether due to __lack of scale__, or indeed __lack of applicability__ to the variables we were looking to analyse, we decided that the OpenWeather Air Pollution API proved to be the best dataset to answer our question and to truly examine the scale and efficacy of COP26, and be able to employ that geographical perspective as well.
 
@@ -238,14 +243,14 @@ The OpenWeather API does a fantastic job of giving us access to an insanely comp
 
 
 
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/7.jpg" class="center"  />
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/8.jpg" class="center"  />
 
 
 
 We mentioned that there were indeed a few limitations from the point of view of the historical reach of the data. As mentioned we wanted to initially look at a range of global climate initiatives extending back some 30 years but were unable to do so because of precisely this issue. We determined that by virtue of the data extending back to November 2020 and continuing to the present day, examining 1 climate protocol, COP26, was the best way forward. This took place in November 2021, which found itself in the middle of our timeline and, thus, opened up the fantastic opportunity to analyse pollution metrics in uniform time windows before, during and after the climate conference.
 
 
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/8.jpg" class="center"  />
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/9.jpg" class="center"  />
 
 
 Our API returned data on our __four variables of interest.__ As this covered all our chosen variables, __our choice of the OpenWeather Air Pollution API was unequivocal.__
@@ -269,7 +274,7 @@ We created this flowchart that can be seen below, to illustrate the _scale, size
 
 
 
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/9.jpg" class="center"  />
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/10.jpg" class="center"  />
 
 
 
@@ -299,7 +304,8 @@ We used the pd.Dataframe function to create the data frame itself. We then made 
 
 We had to employ the use of the __DropNA function__ for this. 
 
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/10.jpg" class="center"  />
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/11.jpg" class="center"  />
 
 
 This allowed us to remove all NaN values that, come data visualisation, would not be able to return anything meaningful and would have produced many annoying errors. You’ll see this _in practice_ in some of the correlation data we will employ for Gaborone’s 'during' and 'post' COP26 data.
@@ -314,7 +320,7 @@ This allowed us to remove all NaN values that, come data visualisation, would no
 We used .concat which concatenated the 6 different data frames into a singular dataframe. We then placed these multiple data frames into a singular list. 
 
 
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/11.jpg" class="center"  />
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/12.jpg" class="center"  />
 
 
 The diagram above _illustrates_ this process.
@@ -323,47 +329,52 @@ The diagram above _illustrates_ this process.
 ---
 
 
-<ins>Preliminary Visualisation (Time Series):</ins>
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/12.jpg" class="center"  />
-Briefly explaining some of the code we employed in the experimentation we started off with;
-MatPlotLib provided the basis of our preliminary experimentation. This is something that we
-have already dealt with through problem sets and on the few python courses we have done
-ourselves. But, in essence we started off by plotting graphs of the same pollutant (on this page
-you can see PM2.5) for our 6 different cities and timeframes; that being before, during and after
-COP26.
-Obviously plotting the designated start and end times for these periods on the x-axis and the
-pollutant levels on the y-axis, we were able to access quite a comprehensive graph illustrating
-air pollution levels over the course of a period for all cities and potentially a bit of a story
-associated with this data.
-The first graph demonstrates the PM2.5 levels before the advent of COP26. We can see huge
-fluctuations in the level of PM2.5, especially with Delhi. Looking at the graph, it is very hard to
-discern between the PM2.5 emissions of the HIC; they are covered by the other clusters, so we
-decided to use a slightly different structure when we mapped out the PM2.5 emissions during
-COP26 (second graph). We still see big fluctuations in Delhi’s levels of emissions, however
-there is a visible and significant reduction in the emissions of São Paulo. This can be explained
-by the firm commitment that Brazil made during the conference.
-After the advent of COP26, Brazil’s emissions have reduced significantly compared to those
-before the introduction of the initiative. Delhi seems to continue to have significant PM2.5
-emissions - due to the soft commitments made in the short term.
+### __Preliminary Visualisation (Time Series)__ 📈
+
+
+Briefly explaining some of the code we employed in the experimentation we started off with; MatPlotLib provided the basis of our preliminary experimentation. This is something that we have already dealt with through problem sets and on the few python courses we have done ourselves. 
+
+But, in essence __we started off by plotting graphs of the same pollutant _(on this page you can see PM2.5)_ for our 6 different cities and timeframes; that being before, during and after COP26.
+
+By plotting the designated start and end times for these periods on the x-axis and the pollutant levels on the y-axis, we were able to access quite a comprehensive graph illustrating air pollution levels over the course of a period for all cities and potentially a bit of a story associated with this data:
+
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/13.jpg" class="center"  />
-Ozone emissions, similar to PM2.5, seemed to have large variations across the board in the
-build up to COP26. Once again, India seems to be a big contributor, with Sao paulo and
-gaborone also remaining big emitters of oxygen
-trioxide.
+
+
+
+The graph on the top demonstrates the PM2.5 levels before the advent of COP26. We can see huge fluctuations in the level of PM2.5, especially with Delhi. Looking at the graph, it is very hard to discern between the PM2.5 emissions of the HIC; they are covered by the other clusters, so we decided to use a slightly different structure when we mapped out the PM2.5 emissions during COP26 (second graph) We still see big fluctuations in Delhi’s levels of emissions, however there is a visible and significant reduction in the emissions of São Paulo. 
+
+This can be explained by the firm commitment that Brazil made during the conference. After the advent of COP26, Brazil’s emissions have reduced significantly compared to those before the introduction of the initiative. Delhi seems to continue to have significant PM2.5 emissions - due to the soft commitments made in the short term.
+
+Ozone emissions, similar to PM2.5, seemed to have large variations across the board in the build up to COP26. Once again, India seems to be a big contributor, with São Gaulo and Gaborone also remaining big emitters of Oxygen
+Trioxide:
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/14.jpg" class="center"  />
-COP26 seems to have a far more significant reduction on Ozone emissions compared to PM2.5
-- across the board, ozone emissions have dropped significantly for the different nations, with
-significant drops for Port-Au-Prince and Gaborone - the conference ended up having significant
-decreases in 03, and a comparatively larger impact than PM2.5
-After COP26, the emissions have decreased across the board, but have increased slightly
-compared to during COP26. This reflects almost a ‘wearing off’ of the effects of the conference,
-with countries resorting back to their old ways as time goes on.
-To highlight this aspect of firms resorting back to their old ways, we decided to graph the NO2
-emissions during and after the conference - here too, it seems that as length of time since
-cop26 increases, the effects it had start to wear off slightly - perhaps this is why so many
-initiatives have been targeted over the last couple
-decades.
+
+
+COP26 seems to have a far more significant reduction on Ozone emissions compared to PM2.5. Across the board, Ozone emissions have dropped significantly for the different nations, with significant drops for Port-Au-Prince and Gaborone - the conference ended up having significant decreases in 03, and a comparatively larger impact than PM2.5.
+
+After COP26, the emissions have decreased across the board, but have increased slightly compared to during COP26. This reflects almost a ‘wearing off’ of the effects of the conference,with countries resorting back to their old ways as time goes on:
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/15.jpg" class="center"  />
+
+
+To highlight this aspect of firms resorting back to their old ways, we decided to graph the NO2 emissions during and after the conference:
+
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/16.jpg" class="center"  />
+
+
+Here too, it seems that as length of time since COP26 increases, the effects it had start to wear off slightly - perhaps this is why so many initiatives have been targeted over the last couple decades.
+
+
+---
+
+
 <ins>Further Preliminary Visualisation (Time Series):</ins>
 Further experimentation, as you can see over this slide and next, involved us plotting different
 cities and air pollutants over the same distinct 3 time periods as before to examine the effects of
