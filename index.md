@@ -166,7 +166,7 @@ We want to see how these fundamental tenets in the relationship between level of
 Our initial choice of these 6 cities enabled us to do exactly this. Furthermore (and perhaps more fundamentally) when it came to deciding which countries to use as part of our analysis we first identified the signatories of COP26. All of these countries had, to different extents,committed to the conference and made pledges. ✍️
 
 
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/6.jpg" class="center"  />
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/5.jpg" class="center"  />
 
 
 
