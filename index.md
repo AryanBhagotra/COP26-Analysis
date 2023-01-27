@@ -196,7 +196,7 @@ Descriptions for our chosen pollutants are as follows:
 
 
 
-### __Potential Datasets - Our Options__ 📊
+### __Potential Datasets - Our Options__ 🤨
 
 
 
@@ -375,90 +375,119 @@ Here too, it seems that as length of time since COP26 increases, the effects it 
 ---
 
 
-<ins>Further Preliminary Visualisation (Time Series):</ins>
-Further experimentation, as you can see over this slide and next, involved us plotting different
-cities and air pollutants over the same distinct 3 time periods as before to examine the effects of
-COP26 and seeing very clearly how these varied by the level of a country’s economic
-development.
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/16.jpg" class="center"  />
+### __Further Preliminary Visualisation (Time Series)__ 📈
+
+
+Further experimentation, as can be seen below, involved us plotting different cities and air pollutants over the same distinct 3 time periods as before to examine the effects of COP26 and seeing very clearly how these varied by the level of a country’s economic development:
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/17.jpg" class="center"  />
-Much of this was aroused by focusing on one city, one air pollutant and one time frame in a
-single graph as opposed to a range of them which we had seen in our preliminary
-experimentation. Obviously we can see that some graphs share a lot more than others, so what
-we really wanted to do at this point was refine our data visualisation, potentially even move
-beyond MatPlotLib, to ultimately share a graph that definitively tells us something about the role
-of COP26 in responding to climate change.
-<ins>More Refined Visualisation (Bar Charts):</ins>
-Expanding on our preliminary investigations, we went further in data visualisation to create more
-sophisticated data visualisation models that provided us clearer identification of what patterns
-were at plaIn this first graph, we see pollutant levels before, during and after COP26 in Sao
-Paulo:
+
+
+Much of this was aroused by focusing on one city, one air pollutant and one time frame in a single graph as opposed to a range of them which we had seen in our preliminary experimentation:
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/18.jpg" class="center"  />
-The first thing observable is that the Carbon Monoxide levels actually fell during the initiative.
-However, after COP26, the levels started to increase again? Is this evidence of a time lag - with
-countries resorting back to their initial behaviours once the initiative is no longer current?
-We were very interested in seeing if this would be the case with other variables.
+
+
+
+Obviously, we can see that some graphs share a lot more than others, so what we really wanted to do at this point was refine our data visualisation, potentially even movebeyond MatPlotLib, to ultimately share a graph that definitively tells us something about the role of COP26 in responding to climate change.
+
+
+
+---
+
+
+
+### __More Refined Visualisation (Bar Charts)__ 📊
+
+Expanding on our preliminary investigations, we went further in data visualisation to create more sophisticated data visualisation models that provided us clearer identification of what patterns were at plaIn this first graph, we see pollutant levels before, during and after COP26 in Sao
+Paulo:
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/19.jpg" class="center"  />
-These next few graphs map out the pollution levels for the other cities that we analysed -we sce
-that time lags exist for the other countries as well, but interestingly it seems to be for different
-variables - primarily No2 emissions.
-<ins>More Refined Visualisation (Pie Charts) [CO]:</ins>
-We then tried to visualise these lags in a slightly different way - using pie charts.
-1. Before COP26, Delhi and Sao Paulo were the biggest carbon monoxide emitters. There seems to be a big diversity in emissions.
+
+The first thing observable is that the Carbon Monoxide levels actually fell during the initiative. However, after COP26, the levels started to increase again? Is this evidence of a time lag - with countries resorting back to their initial behaviours once the initiative is no longer current? We were very interested in seeing if this would be the case with other variables.
+
+
+These next few graphs map out the pollution levels for the other cities that we analysed:
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/20.jpg" class="center"  />
-2. During COP 26, Delhi increased their carbon monoxide emissions by 42% whilst Sao Paulo reduced their emissions by 96.5%. There are clearly huge differences in the response of different nations.
 
-3. After COP26, Delhi found itself emitting similar carbon monoxide levels as pre-COP26. Sao Paulo increased emissions by 83%; the effects seem to wear off with time.
-<ins>More Refined Visualisation (Pie Charts) [O3]:</ins>
-1. Before the conference there seemed to be an asymmetry in the ozone pollutant levels, with most cities falling around the 20% region.
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/21.jpg" class="center"  />
-2. The ozone levels seemed not to change too much during the conference. London reduced its emissions by 33%.
-3. The COP26 conference seemed not to play a big role when it came to ozone emissions - Washington went back to precisely its pre-COP26 levels.
-<ins>More Refined Visualisation (Pie Charts) [PM2.5]:</ins>
-1. Before COP26, Delhi had the highest PM2.5 emission levels.
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/22.jpg" class="center"  />
-2. Delhi increased its PM2.5 emission levels by 27% - seems intuitively strange.
-3. Once again, after COP26, the PM2.5 levels seem unchanged compared to before the conference.
-<ins>More Refined Visualisation (Pie Charts) [NO2]:</ins>
-1. Before COP26, Sao Paulo had the highest nitrous dioxide emission levels.
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/23.jpg" class="center"  />
-2. Delhi increased its emissions by 50.3% whilst Sao Paulo managed to reduce their nitrous dioxide by 38.11%.
-3. Delhi, Sao Paulo and London seemed to have returned to its pre-COP26 nitrous dioxide levels.
-<ins>Preparing Data For Advanced Heatmap Analysis:</ins>
-Step 1 - Cleaning the data:
 
-Our first step of cleaning the data involved us firstly importing in all the libraries (requests,
-pandas, numpy, json, matplotlib (to plot our data). We used Google Colab as we had to import
-files (since it operates on the cloud). We then accessed all of this data through the API key we
-received upon signing up to OpenWeather’s air pollution API. We then collected our data
-using location - this involved using specific longitude and latitude information to access the data
-we needed. The lon/lat functions specify the coordinates for each of the cities that we were
-interested in. We added the start and end dates, to highlight pollution in the build-up, during and
-post the introduction of the COP26 initiative. Using a Unix time converter, we converted the start
-and end dates into the unix form. The API Documentation needed the unix code to process the
-start dates. We then repeated this process for each of the other cities that we were interested
-in.
+We see that time lags exist for the other countries as well, but interestingly it seems to be for different variables - primarily NO2 emissions.
+
+
+---
+
+
+### __Preparing Data For Advanced Heatmap Analysis__ 🗺️
+
+
+__Step 1 - Collecting The Data:__
+
+
+Our first step of cleaning the data involved us firstly importing in all the libraries (requests, pandas, numpy, json, matplotlib (to plot our data). We used Google Colab as we had to import files (since it operates on the cloud). 
+
+We then accessed all of this data through the API key we received upon signing up to OpenWeather’s air pollution API. We then collected our data using location - this involved using specific longitude and latitude information to access the data we needed. The lon/lat functions specify the coordinates for each of the cities that we were interested in. 
+
+We added the start and end dates, to highlight pollution in the build-up, during and post the introduction of the COP26 initiative. 
+
+Using a Unix time converter, we converted the start and end dates into the unix form. The API Documentation needed the Unix code to process the start dates:
+
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/24.jpg" class="center"  />
-Step 2 - Cleaning the Data:
-<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/25.jpg" class="center"  />
-Using our example of São Paulo, let’s walk you through each step behind the cleaning of the
-data and then, moreover, how we employed this cleaning to pivot, melt and mutate our data:
-1. We used the combine function to make the data frames into a single list and assigned it to the variable ‘combined,’ this allowed us to loop through the data frames; allowing us to execute the column dropping and concatenation as efficiently as possible.
-2. For each value in the list of combined, we run a loop to change all unix code to datetime. Drop columns for main, components and dt.
-3. Concatenating data frames, and merging them around axis 1 (the second axis) - admittedly, we needed to use our week 8 here.
-4. We concatenate for each of the cities, merging the data frames together respectively (step 3-step 8)
-5. Step 9 - made a new list containing the new data frames. Defined a new dataframe under the combined2 variable that brings together all the cleaned data frames into a single list.
-6. Step 10 - dropping the columns for main, components and dt, this time for our new combined2 variable
 
-As the outcome of this cleaning, which required a process of pivoting, melting and mutating our
-data, can see when we visualise our same example of Sao Paulo, we have a much cleaner
-dataframe.
+
+
+We then repeated this process for each of the other cities that we were interested in.
+
+
+__Step 2 - Cleaning the Data__
+
+
+Using our example of São Paulo, let’s walk you through each step behind the cleaning of the data and then, moreover, how we employed this cleaning to pivot, melt and mutate our data:
+
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/25.jpg" class="center"  />
+
+
+1. We used the combine function to make the data frames into a single list and assigned it to the variable ‘combined,’ this allowed us to loop through the data frames; allowing us to execute the column dropping and concatenation as efficiently as possible.
+
+2. For each value in the list of combined, we __run a loop__ to change __all unix code to datetime.__ Furthermore, we drop columns for main, components and dt.
+
+3. __Concatenating data frames__, and merging them around axis 1 (the second axis).
+
+4. We concatenate for __each of the cities__, merging the data frames __together__ respectively (steps 3-8).
+
+5. Step 9 - made a __new list__ containing the new data frames. Defined a __new dataframe__ under the combined2 variable that brings together __all__ the cleaned data frames into a __single list__.
+
+6. Step 10 - __dropping the columns for main, components and dt__, this time for our __new combined2 variable__.
+
+
+---
+
+### __Pivoting, Melting & Mutating Our Data__ 🔨
+
+As the outcome of this cleaning, which required a process of __pivoting, melting and mutating our data__, can see when we visualise our same example of Sao Paulo, we have a much cleaner dataframe:
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/26.jpg" class="center"  />
-The dates for our 17,500 rows for this location over the total time we are able to access are very
-clear, as are the pollutants we have a particular interest in which find their associated values
-going down on the left hand side.
-<ins>Initial Heatmap</ins>
-<ins>Exploration:</ins>
+
+
+The dates for our 17,500 rows for this location over the total time we are able to access are very clear, as are the pollutants we have a particular interest in which find their associated values going down on the left hand side.
+
+
+---
+
+
+
+### __Initial Heatmap Exploration__
+
+
+We know began to ask ourselves the question: _What does this clean data mean in terms of hard core data visualisation?_
+
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/27.jpg" class="center"  />
 What does this clean data mean in terms of hard core data visualisation?
 In week 8 of the course, we did a lot of work with MatPlotLib in order to produce some basic
