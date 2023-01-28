@@ -521,7 +521,7 @@ It seems intuitive, that there are short term time lags at least whilst the plan
 ---
 
 
-### __Refining Our Heatmaps___ 🧑‍🔬
+### __Refining Our Heatmaps__ 🧑‍🔬
 
 
 After our attempts, we really bolstered down our efforts to create a much _clearer_ and more _representative_ heatmap.
@@ -695,7 +695,9 @@ __Clearly, different countries respond in different ways contingent on their lev
 ---
 
 ## Appendix
-- [Reference 1](https://www.youtube.com)
-- [Reference 2](https://www.youtube.com)
-- [Reference 3](https://www.youtube.com)
-- [Reference 4](https://www.youtube.com)
+
+- [Webster, P., Neal, K. (2021), 'COP26—will it connect the dots between climate change and inequality?', Journal of Public Health, Oxford Press _(Last Accessed:)_](https://academic.oup.com/jpubhealth/article/43/4/685/6458668)
+- [Chang, H. (2002), 'Kicking Away the Ladder: Development Strategy in Historical Perspective, Penguin Books' _(Last Accessed:)_](https://anthempress.com/kicking-away-the-ladder-pb)
+- [Harris, P. (2022), 'COP26: The eternally weak pulse of climate diplomacy, and what needs to change', PLOS Climate _(Last Accessed:)_](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000019)
+- [Dwivedi, Y., Hughes, L., Barlette, Y. et al. (2022), 'Climate change and COP26: Are digital technologies and information management part of the problem or the solution? An editorial reflection and call to action' _(Last Accessed:)_](https://www.sciencedirect.com/science/article/pii/S0268401221001493)
+- [Hillebrand, E. et al (2020), 'Special Issue: Econometric Models of Climate Change', Oxford Press _(Last Accessed:)_](https://www.inet.ox.ac.uk/publications/special-issue-econometric-models-of-climate-change/)
