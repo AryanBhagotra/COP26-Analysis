@@ -614,7 +614,7 @@ We were determined to find a way to replicate the scale of COP26 in our findings
 This was certainly a tall order, but after much trouble and toil __- we are pleased to say that we were very successful.__
 
 
-----
+---
 
 ### __Expanding Our Research__ 🤓
 
