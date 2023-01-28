@@ -649,7 +649,7 @@ Namely, before we included _all_ of the additional air pollutant variables that 
 
 ### __Building Our Application__ 👷
 
-Below outlines the steps we undertook to make 
+Below outlines the steps we undertook to make our application:
 
 1.	First, we needed to get the data for this project. As before, we retrieved it from our OpenWeather API. Accessing individual data points required __3 things__: latitude, longitude and API key. For the key, we created an account on the website and got access to our free key (which gave us sufficient API calls to carry out this larger project). Furthermore, we got a .csv file from Google with coordinate _(lat/long)_ information of all the countries of interest (it contained __249 countries__).
 
