@@ -653,7 +653,7 @@ Below outlines the steps we undertook to make
 
 1.	First, we needed to get the data for this project. As before, we retrieved it from our OpenWeather API. Accessing individual data points required __3 things__: latitude, longitude and API key. For the key, we created an account on the website and got access to our free key (which gave us sufficient API calls to carry out this larger project). Furthermore, we got a .csv file from Google with coordinate _(lat/long)_ information of all the countries of interest (it contained __249 countries__).
 
-2.	Now we could extract history of each country, as we have __3 three different timelines__ of interest _(pre COP26, during COP26 and post COP26_. The API returns the data in JSON format, so got total of 747 JSON files. We accessed these JSON files by using Python’s request library. 
+2.	Now we could extract history of each country, as we have __3 three different timelines__ of interest _(pre COP26, during COP26 and post COP26_. The API returns the data in .JSON format, so got total of 747 .JSON files. We accessed these JSON files by using Python’s request library. 
 
 3.	Now that we have all the data, we need the data in a single file structure. We could repeat this 3 times so we would have 3 files (one for pre, one for during, and one for post). To do this __we have used python’s pandas library__ and __convert the JSON files into csv files__. As mentioned in the intro, we had 200k+ datapoints for post, 170k+ points for during and 2M+ for pre data - quite a lot. _(especially for our Pre-COP26 timeframe which housed a lot of data)_
 
