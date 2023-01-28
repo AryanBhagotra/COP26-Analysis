@@ -614,16 +614,71 @@ We were determined to find a way to replicate the scale of COP26 in our findings
 This was certainly a tall order, but after much trouble and toil __- we are pleased to say that we were very successful.__
 
 
-----
+---
+
+### __Expanding Our Research__ 🤓
+
+Before we go onto explaining our precise method behind the creation of our application, it is important to note some of the analysis that went into the initial ideation of this very final stretch of our project.
+
+Namely, before we included _all_ of the additional air pollutant variables that ommitted in our initial explorations, we had to understand what they were. The table below, neatly and concsiely summarises all of the variables that went into our advanced, dynamic application:
+
+| __Pollution Metric__ | __Description__ |
+| ------------- | ------------- |
+| __AQI(Air Quality Index)__ | Composite metric including 5 different air pollutants. Ranked on a scale of 1-5, where 1 is the best and 5 is the worst!|
+| __Carbon Monoxide__ | A very poisonous gas, with the potential of making you seriously ill if you breathe it in! Colourless and odourless gas produced from combustion of certain fuels.|
+| __Nitrous Oxide__ | This is the third most emitted greenhouse gas, produced during industrial processes. Known informally as laughing has, nitrous oxide is a staggering 300 x more potent that carbon monoxide.  |
+| __Nitrous Dioxide__ | Nitrogen Dioxide is a gaseous air pollutant containing both nitrogen and oxygen. It forms in the internal combustion engines of cars.|
+| __Oxygen Trioxide__ | Whilst the classification of this gas as a greenhouse gas is highly controversial, when inhaled it can cause serious damage to the lungs so we included it as a metric  |
+| __Sulphur Dioxide__ | Often considered an indirect greenhouse gas, Sulphur dioxide can react to form sulphuric acid, which causes the acidification of water bodies and damage to buildings (particularly those built of limestone) |
+| __Particulate Matter 2.5__ | Particles that are 2.5 microns or less are defined as PM2.5, these particles can travel far deep into the respiratory tract, even reaching the lungs! They can cause short and long term health affects.|
+| __Particular Matter 10__ | Particles that are 10 microns or less are defined as PM10, these too are small enough to pass through the throat and nose, entering the lungs!  |
+| __Ammonia__ | Ammonia is a very major ingredient in the production of fertilisers (used in the world’s food production.) It reacts with other pollutants in the air, forming fine particles of ammonium salts that are very bad for human breathing!|
+
+---
 
 ### __Building Our Application__ 👷
 
+Below outlines the steps we undertook to make our application:
+
+1.	First, we needed to get the data for this project. As before, we retrieved it from our OpenWeather API. Accessing individual data points required __3 things__: latitude, longitude and API key. For the key, we created an account on the website and got access to our free key (which gave us sufficient API calls to carry out this larger project). Furthermore, we got a .csv file from Google with coordinate _(lat/long)_ information of all the countries of interest (it contained __249 countries__).
+
+2.	Now we could extract history of each country, as we have __3 three different timelines__ of interest _(pre COP26, during COP26 and post COP26_. The API returns the data in .JSON format, so got total of 747 .JSON files. We accessed these JSON files by using Python’s request library. 
+
+3.	Now that we have all the data, we need the data in a single file structure. We could repeat this 3 times so we would have 3 files (one for pre, one for during, and one for post). To do this __we have used python’s pandas library__ and __convert the JSON files into csv files__. As mentioned in the intro, we had 200k+ datapoints for post, 170k+ points for during and 2M+ for pre data - quite a lot. _(especially for our Pre-COP26 timeframe which housed a lot of data)_
+
+4.	Due to the large size of this Pre-COP26 file, one quirky thing we had to do was that we had to __divide the pre data into 2 files.__ This was because we needed to upload this file onto GitHub, which has a __limit of 100MB per file__ _(much above the size of our original pre file which was 150MB!)_.
+
+5.	Now that we have all the data, we have used __streamlit, plotly and pandas tools__ to make a simple website with some visualizations. Here are some explanations on each
+
+- __Pandas:__ We explored this in our initial research. It’s a very powerful library that enables us to handle tabular data.
+
+- __Plotly:__ This library generates beautiful and interactive visualizations.
+
+- __Streamlit:__ This is a Python framework which creates web apps (mostly for data science and machine learning). It also makes the hosting of these apps very easy _(we didn't have to pay any pesky hosting/domain fees)_. It turns data scripts into shareable web apps quite efficiently. THis was all in pure Python with limited front‑end experience required.
+
+6.	First, we plotted the __world heatmap__, where we have shown the quality of air _(see earlier for information on this variable)_ for each country on a scale of 1-5 for each timeline. Streamlit makes it relatively simple to add widgets (like input, selectbox etc). There is also selection box with this map, where we can select the timeline (pre, post, and during). And plotly makes this map interactive where we can zoom into the map and hover over to see the country:
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/31.jpg" class="center"  />
+
+7.	Apart from the map we have added __2 more plots.__
+
+- In the plot below we have given the user freedom to select any of feature available and any country in the dataset _(like NO2 information)_, and plot their values for __3 timelines across 3 graphs__:
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/32.jpg" class="center"  />
 
+- For the second plot, the user will select the country and the plot will show the percentage of air quality for each of the timeline. This is a nice __stacked bar chart__ format, which is a much more efficient mechanism than our previously considered choice of pie charts:
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/33.jpg" class="center"  />
 
+8.	After the code was ready, we __uploaded it to Github__ and __connected the repo with Streamlit cloud__. This is where we __host the website for free.__
+
+And, at the end of all of this, we had a finished web application that works fantastically! 
+
+Feel free to have a play with it! Once again, it can be found using the following hyperlink: [Our Dynamic Streamlit Application](https://amandeepn-cop26-analysis-app-05i6n6.streamlit.app)
+
+__Note:__ _It could be a little slow to load at first because the app may be asleep!_ 💤
+
+If you are having any trouble with accessing our dynamic web application, __please contact us__, as the app may have been temporarily deactivated! 👍
 
 ---
 
@@ -631,7 +686,7 @@ This was certainly a tall order, but after much trouble and toil __- we are plea
 
 ### __Our Verdict & Answer__ 💪
 
-As we discussed, we found different countries responded differently to the conference: We saw the countries demonstrated time lags when it came to their emissions; they generally decreased their emissions suddenly during COP26 then increased them again after COP26; this was most notable for Brazil as noted. 
+As discussed, we found different countries responded differently to the conference: We saw the countries demonstrated time lags when it came to their emissions; they generally decreased their emissions suddenly during COP26 then increased them again after COP26; this was most notable for Brazil as noted. 
 
 We found clear evidence of time lags when it came to their response and concluded this is why so many climate initiatives have been implemented over the last 30 years. Delhi, in particular, seemed not to fit this trend - they actually increased their emissions during the pandemic. 
 
