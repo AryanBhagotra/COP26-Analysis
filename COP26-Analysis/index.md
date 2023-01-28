@@ -686,7 +686,7 @@ If you are having any trouble with accessing our dynamic web application, __plea
 
 ### __Our Verdict & Answer__ 💪
 
-As we discussed, we found different countries responded differently to the conference: We saw the countries demonstrated time lags when it came to their emissions; they generally decreased their emissions suddenly during COP26 then increased them again after COP26; this was most notable for Brazil as noted. 
+As discussed, we found different countries responded differently to the conference: We saw the countries demonstrated time lags when it came to their emissions; they generally decreased their emissions suddenly during COP26 then increased them again after COP26; this was most notable for Brazil as noted. 
 
 We found clear evidence of time lags when it came to their response and concluded this is why so many climate initiatives have been implemented over the last 30 years. Delhi, in particular, seemed not to fit this trend - they actually increased their emissions during the pandemic. 
 
