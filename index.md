@@ -81,7 +81,7 @@ We will reveal more on our journey in creating this app further down on this pag
 [Our Dynamic Streamlit Application](https://amandeepn-cop26-analysis-app-05i6n6.streamlit.app)
 
 ### Click on the hyperlink below to see an introductory video 👇
-[A Video Introduction To Our Dynamic Streamlit Application](https://www.youtube.com)
+[A Video Introduction To Our Dynamic Streamlit Application](https://youtu.be/93RtVN9ctsA)
 
 ---
 
@@ -641,13 +641,13 @@ Below outlines the steps we undertook to make our application:
 
 4.	Due to the large size of this Pre-COP26 file, one quirky thing we had to do was that we had to __divide the pre data into 2 files.__ This was because we needed to upload this file onto GitHub, which has a __limit of 100MB per file__ _(much above the size of our original pre file which was 150MB!)_.
 
-5.	Now that we have all the data, we have used __streamlit, plotly and pandas tools__ to make a simple website with some visualizations. Here are some explanations on each
+5.	Now that we have all the data, we have used __streamlit, plotly and pandas tools__ to make a simple website with some visualizations. Here are some explanations on each:
 
 - __Pandas:__ We explored this in our initial research. It’s a very powerful library that enables us to handle tabular data.
 
 - __Plotly:__ This library generates beautiful and interactive visualizations.
 
-- __Streamlit:__ This is a Python framework which creates web apps (mostly for data science and machine learning). It also makes the hosting of these apps very easy _(we didn't have to pay any pesky hosting/domain fees)_. It turns data scripts into shareable web apps quite efficiently. THis was all in pure Python with limited front‑end experience required.
+- __Streamlit:__ This is a Python framework which creates web apps (mostly for data science and machine learning). It also makes the hosting of these apps very easy _(we didn't have to pay any pesky hosting/domain fees)_. It turns data scripts into shareable web apps quite efficiently. This was all in pure Python with limited front‑end experience required.
 
 First, we plotted the __world heatmap__, where we have shown the quality of air _(see earlier for information on this variable)_ for each country on a scale of 1-5 for each timeline. Streamlit makes it relatively simple to add widgets (like input, selectbox etc). There is also selection box with this map, where we can select the timeline (pre, post, and during). And plotly makes this map interactive where we can zoom into the map and hover over to see the country:
 
