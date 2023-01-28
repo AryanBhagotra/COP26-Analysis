@@ -1,5 +1,10 @@
 # __Project Introduction__ :speaker:
 
+## __Welcome To Our Project!__ :wave:
+
+### __Who are we?__
+Amandeep and Aryan - two Economists with a keen interest in uncovering the intersectionality between Economics and Data Science! :muscle:
+
 ### __What are we doing?__
 
 Our DS105M project is centred around COP26 and the impacts that it had. In particular, how did this climate conference affect the emissions of different countries? By making use of OpenWeatherMap’s API, we collected __huge__ amounts of data on emissions before, during and after the conference, discerning any relationships! We started off by looking at a select few countries and pollutants, but soon extended it to the __entire world__ :earth_africa:. We compared and contrasted emissions based on levels of economic development (producing a global heatmap for every single country!) :sparkles:
