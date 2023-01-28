@@ -258,6 +258,7 @@ Our API returned data on our __four variables of interest.__ As this covered all
 
 ---
 
+## Initial Process
 
 
 ### __Making Use of Code__ 👨‍💻
@@ -419,6 +420,8 @@ We see that time lags exist for the other countries as well, but interestingly i
 
 
 ---
+## Sophisticated Data Visualisation
+
 
 
 ### __Preparing Data For Advanced Heatmap Analysis__ 🗺️
@@ -453,7 +456,7 @@ Using our example of São Paulo, let’s walk you through each step behind the c
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/22.jpg" class="center"  />
 
 
-1. We used the combine function to make the data frames into a single list and assigned it to the variable ‘combined,’ this allowed us to loop through the data frames; allowing us to execute the column dropping and concatenation as efficiently as possible.
+1. We used the __combine function__ to make the data frames into a single list and assigned it to the variable ‘combined,’ this allowed us to __loop__ through the data frames; allowing us to execute the column dropping and concatenation as __efficiently__ as possible.
 
 2. For each value in the list of combined, we __run a loop__ to change __all unix code to datetime.__ Furthermore, we drop columns for main, components and dt.
 
@@ -487,7 +490,7 @@ The dates for our 17,500 rows for this location over the total time we are able 
 
 __We now began to ask ourselves the question:__ _What does this clean data mean in terms of hard core data visualisation?_
 
-In week 8 and 11 of the course, we did a lot of work with MatPlotLib in order to produce some basic continuous graphs of air pollutants across our 3 distinct time frames of pre, during and post COP26 for all of our cities. 
+In Weeks 8 and 11 of the course, we did a lot of work with MatPlotLib in order to produce some basic continuous graphs of air pollutants across our 3 distinct time frames of pre, during and post COP26 for all of our cities. 
 
 But one of the biggest criticisms we had for ourselves was that we wanted to be __a little more creative__, we wanted to be __a little more advanced.__
 
@@ -501,7 +504,7 @@ The above here shows some of our initial efforts. We can see that our heatmaps a
 ---
 
 
-### __Further Heatmap Exploration__ 
+### __Further Heatmap Exploration__ 🏞
 
 
 These more refined heatmaps try to elucidate what the real target areas had been during the COP26 initiative: 
@@ -518,7 +521,7 @@ It seems intuitive, that there are short term time lags at least whilst the plan
 ---
 
 
-### __Refining Our Heatmaps___
+### __Refining Our Heatmaps___ 🧑‍🔬
 
 
 After our attempts, we really bolstered down our efforts to create a much _clearer_ and more _representative_ heatmap.
@@ -546,7 +549,7 @@ In __our final step__, we then use calplot, which is a function that creates hea
 ---
 
 
-### __The Outcome Of Our Refinement__
+### __The Outcome Of Our Refinement__ 🕺
 
 
 Below presents our final and refined heatmaps. It is clear that, through these, we are able to tell a story. Starting with our findings for São Paulo and London across our 3 time periods:
@@ -574,42 +577,65 @@ This is particularly relevant as we begin to examine the specific measures that 
 
 ---
 
-__Statistical Inference__
+## Statistical Inference
+
+
+### __Correlation Analysis__ 🕵️‍♂️
+
+We wished to analyse the correlation between each of the pollutants before, during and after the COP26 initiative. Below is the code and corresponding correlation table for our São Paulo example:
+
+
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/29.jpg" class="center"  />
+
+
+
+We see here that there is a very strong relationship between Carbon Monoxide and NO2 in Sao Paulo, during the pandemic this actually weakened - to 0.73 before slightly increasing to 0.78 - it seems that the COP26 initiative actually changed the correlations between each of the variables.
+
+Below are the correlation graphs for all of our other locations _(HINT: feel free to download the image to view all graphs in HD)_:
+
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/30.jpg" class="center"  />
+
+
+We have used the __Seaborn Python Data Visualisation Library__, based on MatPlotLib, to develop correlation data as summary statistics. 
+
+The role of this is to shed light on our limitation last week concerning causation vs correlation. Investigating correlations between all gases before, during and after COP26 across all of our locations will allow us to explore whether or not the initiative has affected the interrelations between a country’s pollutants. Pre-COP26, we noticed that Ozone emissions were strongly correlated with the carbon monoxide emissions in Gaborone (a correlation of 0.36 existed between the two), which actually fell to 0.11 during the conference. It did, however, slightly increase to 0.4 after the conference; perhaps once again indicating the time lag.
+
+
+---
+
+## Our End Outcome
+
+We quite accurately and precisely were able to deliver convincing findings, visualisations and inference on our 4 pollution metrics across our 6 global locations. It is clear that our findings are conducive to delivering potential answers to our overall question, but we felt as if providing an answer to our question through merely 6 countries and a restritive set of 4 pollution metrics was not doing due justice to the very global and cosmopolitant essence of the COP26 climate initiative and its impact. 
+
+We were determined to find a way to replicate the scale of COP26 in our findings, analysis and - _eventually_ - conclusion. After much thought, we knew that global data visualisation could never be established through static means and we needed a dynamic, interactive interface in order to do so.
+
+This was certainly a tall order, but after much trouble and toil __- we are pleased to say that we were very successful.__
+
+
+----
+
+### __Building Our Application__ 👷
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/31.jpg" class="center"  />
 
-We wished to analyse the correlation between each of the pollutants before, during and after the
-COP26 initiative. We see here that there is a very strong relationship between carbon monoxide
-and no2 in Sao Paulo, during the pandemic this actually weakened - to 0.73 before slightly
-increasing to 0.78 - it seems that the COP26 initiative actually changed the correlations between
-each of the variables.
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/32.jpg" class="center"  />
-We have used the Seaborn Python data visualisation library, based on matplotlib, to develop
-correlation data as summary statistics. The role of this is to shed light on our limitation last week
-concerning causation vs correlation. Investigating correlations between all gases before, during
-and after COP26 across all of our locations will allow us to explore whether or not the initiative
-has affected the interrelations between a country’s pollutants. Pre-COP26, we noticed that ozone
-emissions were strongly correlated with the carbon monoxide emissions in Gaborone (a
-correlation of 0.36 existed between the two), which actually fell to 0.11 during the conference. It
-did, however, slightly increase to 0.4 after the conference; perhaps once again indicating the time
-lag.
+
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/33.jpg" class="center"  />
 
 
 ---
 
+## Conclusion
 
-<ins>Our Verdict & Answer:</ins>
-As we discussed, we found different countries responded differently to the conference:
-We saw the countries demonstrated time lags when it came to their emissions; they generally
-decreased their emissions suddenly during COP26 then increased them again after COP26; this
-was most notable for Brazil as noted. We found clear evidence of time lags when it came to their
-response and concluded this is why so many climate initiatives have been implemented over the
-last 30 years.
-Delhi, in particular, seemed not to fit this trend - they actually increased their emissions during the
-pandemic. Clearly, different countries respond in different ways contingent on their levels of
-development.
+### __Our Verdict & Answer__ 💪
+
+As we discussed, we found different countries responded differently to the conference: We saw the countries demonstrated time lags when it came to their emissions; they generally decreased their emissions suddenly during COP26 then increased them again after COP26; this was most notable for Brazil as noted. 
+
+We found clear evidence of time lags when it came to their response and concluded this is why so many climate initiatives have been implemented over the last 30 years. Delhi, in particular, seemed not to fit this trend - they actually increased their emissions during the pandemic. 
+
+__Clearly, different countries respond in different ways contingent on their levels of development.__
 
 ---
 
