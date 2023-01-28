@@ -342,7 +342,7 @@ The graph on the top demonstrates the PM2.5 levels before the advent of COP26. W
 
 This can be explained by the firm commitment that Brazil made during the conference. After the advent of COP26, Brazil’s emissions have reduced significantly compared to those before the introduction of the initiative. Delhi seems to continue to have significant PM2.5 emissions - due to the soft commitments made in the short term.
 
-Ozone emissions, similar to PM2.5, seemed to have large variations across the board in the build up to COP26. Once again, India seems to be a big contributor, with São Gaulo and Gaborone also remaining big emitters of Oxygen
+Ozone emissions, similar to PM2.5, seemed to have large variations across the board in the build up to COP26. Once again, India seems to be a big contributor, with São Paulo and Gaborone also remaining big emitters of Oxygen
 Trioxide:
 
 
@@ -466,7 +466,7 @@ Using our example of São Paulo, let’s walk you through each step behind the c
 
 ### __Pivoting, Melting & Mutating Our Data__ 🔨
 
-As the outcome of this cleaning, which required a process of __pivoting, melting and mutating our data__, can see when we visualise our same example of Sao Paulo, we have a much cleaner dataframe:
+As the outcome of this cleaning, which required a process of __pivoting, melting and mutating our data__, can see when we visualise our same example of São Paulo, we have a much cleaner dataframe:
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/23.jpg" class="center"  />
 
@@ -549,17 +549,31 @@ Below presents our final and refined heatmaps. It is clear that, through these, 
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/27.jpg" class="center"  />
 
-And further presenting our findings for our other 4 locations across our 3 time periods:
+And further presenting our findings for our other 4 locations across our 3 time periods _(HINT: feel free to download the image to view all graphs in HD)_:
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/28.jpg" class="center"  />
 
+In order to clearly put across to you a few examples of our correlation data, see below an example from __Gaborone__ for the pollutant __Carbon Monoxide (CO)__:
+
+__Pre-COP26:__
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/37.jpg" class="center"  />
+
+__During COP26:__
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/38.jpg" class="center"  />
+
+__Post-COP26:__
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/39.jpg" class="center"  />
+
 This is particularly relevant as we begin to examine the specific measures that were undertaken by each respective country:
 
-1. __Washington:__ Washington, D.C. had moderate levels of air pollution before COP26. During the conference, the US government announced new plans to reduce emissions from the transportation sector. As a result, heat maps show a small decrease in pollution levels in Washington, D.C. during and after COP26.
+1. __Gaborone:__ Gaborone had relatively low levels of air pollution before COP26. However, during the conference, the Botswana government did not announce any major plans to reduce emissions. Heat maps show little to no change in pollution levels in Gaborone during and after COP26.
 
 2. __Sao Paulo:__ Sao Paulo had high levels of air pollution before COP26. However, during the conference, the Brazilian government announced new plans to reduce emissions from the transportation and industrial sectors. As a result, heat maps show a moderate decrease in pollution levels in Sao Paulo during and after COP26.
 
-3. __Gaborone:__ Gaborone had relatively low levels of air pollution before COP26. However, during the conference, the Botswana government did not announce any major plans to reduce emissions. Heat maps show little to no change in pollution levels in Gaborone during and after COP26.
+3. __Washington:__ Washington, D.C. had moderate levels of air pollution before COP26. During the conference, the US government announced new plans to reduce emissions from the transportation sector. As a result, heat maps show a small decrease in pollution levels in Washington, D.C. during and after COP26.
 
 4. __London:__ London had relatively low levels of air pollution before COP26. During the conference, the UK government announced new targets for reducing emissions from the power sector. As a result, heat maps show a small decrease in pollution levels in London during and after COP26.
 
@@ -587,9 +601,21 @@ We see here that there is a very strong relationship between Carbon Monoxide and
 
 Below are the correlation graphs for all of our other locations _(HINT: feel free to download the image to view all graphs in HD)_:
 
-
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/30.jpg" class="center"  />
 
+In order to clearly put across to you a few examples of our correlation data, see below an example from __each cluster__ for the __during COP26 timeframe__:
+
+__Port-Au-Prince (PAP)__ _(Developing Economy)_:
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/34.jpg" class="center"  />
+
+__Delhi__ _(Emerging Economy)_:
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/35.jpg" class="center"  />
+
+__London__ _(Developed Economy)_:
+
+<img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/36.jpg" class="center"  />
 
 We have used the __Seaborn Python Data Visualisation Library__, based on MatPlotLib, to develop correlation data as summary statistics. 
 
