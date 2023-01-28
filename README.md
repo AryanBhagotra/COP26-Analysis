@@ -1,4 +1,4 @@
-# __Project Introuction__ :speaker:
+# __Project Introduction__ :speaker:
 
 ## __Welcome To Our Project!__ :wave:
 
