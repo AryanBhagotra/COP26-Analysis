@@ -626,7 +626,7 @@ Namely, before we included _all_ of the additional air pollutant variables that 
 | ------------- | ------------- |
 | __AQI(Air Quality Index)__ | Composite metric including 5 different air pollutants. Ranked on a scale of 1-5, where 1 is the best and 5 is the worst!|
 | __Carbon Monoxide__ | A very poisonous gas, with the potential of making you seriously ill if you breathe it in! Colourless and odourless gas produced from combustion of certain fuels.|
-| __Nitrous Oxide__ | This is the third most emitted greenhouse gas, produced during industrial processes. Known informally as laughing has, nitrous oxide is a staggering 300 x more potent that carbon monoxide.  |
+| __Nitrous Oxide__ | This is the third most emitted greenhouse gas, produced during industrial processes. Known informally as laughing has, nitrous oxide is a staggering 300x more potent that carbon monoxide.  |
 | __Nitrous Dioxide__ | Nitrogen Dioxide is a gaseous air pollutant containing both nitrogen and oxygen. It forms in the internal combustion engines of cars.|
 | __Oxygen Trioxide__ | Whilst the classification of this gas as a greenhouse gas is highly controversial, when inhaled it can cause serious damage to the lungs so we included it as a metric  |
 | __Sulphur Dioxide__ | Often considered an indirect greenhouse gas, Sulphur dioxide can react to form sulphuric acid, which causes the acidification of water bodies and damage to buildings (particularly those built of limestone) |
@@ -696,8 +696,8 @@ __Clearly, different countries respond in different ways contingent on their lev
 
 ## Appendix
 
-- [Webster, P., Neal, K. (2021), 'COP26—will it connect the dots between climate change and inequality?', Journal of Public Health, Oxford Press _(Last Accessed:)_](https://academic.oup.com/jpubhealth/article/43/4/685/6458668)
-- [Chang, H. (2002), 'Kicking Away the Ladder: Development Strategy in Historical Perspective, Penguin Books' _(Last Accessed:)_](https://anthempress.com/kicking-away-the-ladder-pb)
-- [Harris, P. (2022), 'COP26: The eternally weak pulse of climate diplomacy, and what needs to change', PLOS Climate _(Last Accessed:)_](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000019)
+- [Webster, P., Neal, K. (2021), 'COP26—will it connect the dots between climate change and inequality?', Journal of Public Health, Oxford Press _(Last Accessed: 28/01/23)_](https://academic.oup.com/jpubhealth/article/43/4/685/6458668)
+- [Chang, H. (2002), 'Kicking Away the Ladder: Development Strategy in Historical Perspective, Penguin Books' _(Last Accessed: 27/01/23)_](https://anthempress.com/kicking-away-the-ladder-pb)
+- [Harris, P. (2022), 'COP26: The eternally weak pulse of climate diplomacy, and what needs to change', PLOS Climate _(Last Accessed: 28/01/23)_](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000019)
 - [Dwivedi, Y., Hughes, L., Barlette, Y. et al. (2022), 'Climate change and COP26: Are digital technologies and information management part of the problem or the solution? An editorial reflection and call to action' _(Last Accessed:)_](https://www.sciencedirect.com/science/article/pii/S0268401221001493)
-- [Hillebrand, E. et al (2020), 'Special Issue: Econometric Models of Climate Change', Oxford Press _(Last Accessed:)_](https://www.inet.ox.ac.uk/publications/special-issue-econometric-models-of-climate-change/)
+- [Hillebrand, E. et al (2020), 'Special Issue: Econometric Models of Climate Change', Oxford Press _(Last Accessed: 29/01/23)_](https://www.inet.ox.ac.uk/publications/special-issue-econometric-models-of-climate-change/)
