@@ -622,6 +622,17 @@ Before we go onto explaining our precise method behind the creation of our appli
 
 Namely, before we included _all_ of the additional air pollutant variables that ommitted in our initial explorations, we had to understand what they were. The table below, neatly and concsiely summarises all of the variables that went into our advanced, dynamic application:
 
+| __Pollution Metric__ | __Description__ |
+| ------------- | ------------- |
+| __AQI(Air Quality Index)__ | Composite metric including 5 different air pollutants. Ranked on a scale of 1-5, where 1 is the best and 5 is the worst!|
+| __Carbon Monoxide__ | A very poisonous gas, with the potential of making you seriously ill if you breathe it in! Colourless and odourless gas produced from combustion of certain fuels.|
+| __Nitrous Oxide__ | This is the third most emitted greenhouse gas, produced during industrial processes. Known informally as laughing has, nitrous oxide is a staggering 300 x more potent that carbon monoxide.  |
+| __Nitrous Dioxide__ | Nitrogen Dioxide is a gaseous air pollutant containing both nitrogen and oxygen. It forms in the internal combustion engines of cars.|
+| __Oxygen Trioxide__ | Whilst the classification of this gas as a greenhouse gas is highly controversial, when inhaled it can cause serious damage to the lungs so we included it as a metric  |
+| __Sulphur Dioxide__ | Often considered an indirect greenhouse gas, Sulphur dioxide can react to form sulphuric acid, which causes the acidification of water bodies and damage to buildings (particularly those built of limestone) |
+| __Particulate Matter 2.5__ | Particles that are 2.5 microns or less are defined as PM2.5, these particles can travel far deep into the respiratory tract, even reaching the lungs! They can cause short and long term health affects.|
+| __Particular Matter 10__ | Particles that are 10 microns or less are defined as PM10, these too are small enough to pass through the throat and nose, entering the lungs!  |
+| __Ammonia__ | Ammonia is a very major ingredient in the production of fertilisers (used in the world’s food production.) It reacts with other pollutants in the air, forming fine particles of ammonium salts that are very bad for human breathing!|
 
 ---
 
