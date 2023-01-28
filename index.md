@@ -6,7 +6,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
     }
 </style>
 
@@ -56,6 +56,8 @@ We investigated a number of trends - whether certain pollutants were more suscep
 3.	The data __after__ the COP26 conference had __221,000 data points__
 
 If time lags do exist, it can explain why so many conferences have taken place. However, it also suggests that systemic change needs to be made with respect to how the issue of climate change is being dealt with. If the level of development of a country does, indeed, affect the extent to which pollution can be curtailed, it provides evidence for Ha-Joon Chang’s argument that the richer nations are ’Kicking Away The Ladder,’ for the less developed countries. 🪜
+
+Throughout this page, you'll come across the Data Science Odyssey that we had embarked on. You'll see our __story and 'big picture' of how we gathered our data__ and the __challenges we faced__ along the way.
 
 
 ---
@@ -180,16 +182,7 @@ Our initial choice of these 6 cities enabled us to do exactly this. Furthermore 
 
 Dates (or, perhaps more accurately, our lack of them) were wholly based on our limited choice of data sets - we will examine this further in the next section. As for our choice of pollutants, we had quickly discerned that we required a range of different pollutants in order to avoid the impacts of any selection bias that could have arisen from selecting only one pollution metric. 
 
-Descriptions for our chosen pollutants are as follows:
-
-- The first polluting gas we looked at was __Carbon Monoxide.__ Carbon monoxide occurs primarily from emissions by fossil-fuel powered engines. We decided to look into Carbon Monoxide as one of our pollutants of interest as the API was able to return data on it. It seemed natural to focus on the evolution of this gas with the advent of the climate initiative
-
-- We then decided to look at __Ozone/ Oxygen Trioxide.__ When inhaled, ozone causes severe damage to the lungs. Ozone absorbs radiation, consequently acting as a greenhouse gas. As such a big contributor to the greenhouse effect, we felt it logical to investigate its evolution.
-
-- __NO2 or Nitrous Dioxide__ occurs primarily from cars, buses and trucks. It gets into the atmosphere, reacting to form Nitric acid (acid rain). This acid rain causes damage to buildings and causes the acidification of water bodies, contributing to biodiversity loss.
-
-- We also examined the __fine particulates (PM2.5)__. These appear in the air, reducing the visibility. Exposure to PM2.5 has been said to cause premature mortality - so we chose to investigate this as our fourth metric of interest. 
-
+Descriptions for our chosen pollutants can be found in a nice table near towards the end of the page where _(spoiler alert)_ we expanded our choice of air pollutants before making our final application.
 
 
 ---
@@ -642,9 +635,9 @@ Below outlines the steps we undertook to make our application:
 
 1.	First, we needed to get the data for this project. As before, we retrieved it from our OpenWeather API. Accessing individual data points required __3 things__: latitude, longitude and API key. For the key, we created an account on the website and got access to our free key (which gave us sufficient API calls to carry out this larger project). Furthermore, we got a .csv file from Google with coordinate _(lat/long)_ information of all the countries of interest (it contained __249 countries__).
 
-2.	Now we could extract history of each country, as we have __3 three different timelines__ of interest _(pre COP26, during COP26 and post COP26_. The API returns the data in .JSON format, so got total of 747 .JSON files. We accessed these JSON files by using Python’s request library. 
+2.	Now we could extract history of each country, as we have __3 three different timelines__ of interest _(pre COP26, during COP26 and post COP26)_. The API returns the data in .JSON format, so got total of 747 .JSON files. We accessed these JSON files by using Python’s request library. 
 
-3.	Now that we have all the data, we need the data in a single file structure. We could repeat this 3 times so we would have 3 files (one for pre, one for during, and one for post). To do this __we have used python’s pandas library__ and __convert the JSON files into csv files__. As mentioned in the intro, we had 200k+ datapoints for post, 170k+ points for during and 2M+ for pre data - quite a lot. _(especially for our Pre-COP26 timeframe which housed a lot of data)_
+3.	Now that we have all the data, we need the data in a single file structure. We could repeat this 3 times so we would have 3 files (one for pre, one for during, and one for post). To do this __we have used python’s pandas library__ and __convert the .JSON files into .csv files__. As mentioned in the intro, we had 200k+ datapoints for post, 170k+ points for during and 2M+ for pre data - quite a lot. _(especially for our Pre-COP26 timeframe which housed a lot of data)_
 
 4.	Due to the large size of this Pre-COP26 file, one quirky thing we had to do was that we had to __divide the pre data into 2 files.__ This was because we needed to upload this file onto GitHub, which has a __limit of 100MB per file__ _(much above the size of our original pre file which was 150MB!)_.
 
