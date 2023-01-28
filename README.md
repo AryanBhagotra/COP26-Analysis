@@ -3,6 +3,7 @@
 ## __Welcome To Our Project!__ :wave:
 
 ### __Who are we?__
+
 Amandeep and Aryan - two Economists with a keen interest in uncovering the intersectionality between Economics and Data Science! :muscle:
 
 ### __What are we doing?__
@@ -22,6 +23,16 @@ Take a look at our methodology and findings on our GitHub Webpage : [Our Methodo
 Our global heatmap is available for you to try : [Try Our Heatmap](https://amandeepn-cop26-analysis-app-05i6n6.streamlit.app) :raised_hands:
 
  __HINT__ : you can expand the heatmap using the expand key on the right of the heatmap! Think about a country you are interested in (maybe your home country) :india: and try it out - see what the data shows (it might just surprise you!) :wink:
+ 
+### __Working collaboratively!__
+
+Working well as a team was exactly what made us successfully produce such a _large scale_ project as such a _small group._ We utilised our varying specilaities in order to delegate work in a way that ensured __efficiency__ and __proactivity__.
+
+Amandeep had long taken a liking towards the code. Debugging, visualisation and coding were his strong points. 
+
+Aryan had a strong fortitude for connecting these technical facets to the question at hand. He was able to analyse and scritinise findings delivered by the data and discern 'patterns amongst the madness'.
+
+Overall our skills tesselated beautifully, and we were able to produce our best work through our shared conscientious mindset! 👍
 
 ### __What’s next?__
 
