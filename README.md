@@ -28,3 +28,7 @@ We hope to conduct a similar analysis on COP27 and subsequent climate conference
 
 
 
+
+
+
+
