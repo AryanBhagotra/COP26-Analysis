@@ -656,11 +656,11 @@ Below outlines the steps we undertook to make our application:
 
 - __Streamlit:__ This is a Python framework which creates web apps (mostly for data science and machine learning). It also makes the hosting of these apps very easy _(we didn't have to pay any pesky hosting/domain fees)_. It turns data scripts into shareable web apps quite efficiently. THis was all in pure Python with limited front‑end experience required.
 
-6.	First, we plotted the __world heatmap__, where we have shown the quality of air _(see earlier for information on this variable)_ for each country on a scale of 1-5 for each timeline. Streamlit makes it relatively simple to add widgets (like input, selectbox etc). There is also selection box with this map, where we can select the timeline (pre, post, and during). And plotly makes this map interactive where we can zoom into the map and hover over to see the country:
+First, we plotted the __world heatmap__, where we have shown the quality of air _(see earlier for information on this variable)_ for each country on a scale of 1-5 for each timeline. Streamlit makes it relatively simple to add widgets (like input, selectbox etc). There is also selection box with this map, where we can select the timeline (pre, post, and during). And plotly makes this map interactive where we can zoom into the map and hover over to see the country:
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/31.jpg" class="center"  />
 
-7.	Apart from the map we have added __2 more plots.__
+Apart from the map we have added __2 more plots__:
 
 - In the plot below we have given the user freedom to select any of feature available and any country in the dataset _(like NO2 information)_, and plot their values for __3 timelines across 3 graphs__:
 
@@ -670,7 +670,7 @@ Below outlines the steps we undertook to make our application:
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/33.jpg" class="center"  />
 
-8.	After the code was ready, we __uploaded it to Github__ and __connected the repo with Streamlit cloud__. This is where we __host the website for free.__
+After the code was ready, we __uploaded it to Github__ and __connected the repo with Streamlit cloud__. This is where we __host the website for free.__
 
 And, at the end of all of this, we had a finished web application that works fantastically! 
 
