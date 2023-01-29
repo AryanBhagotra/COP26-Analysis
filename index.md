@@ -589,7 +589,7 @@ This is particularly relevant as we begin to examine the specific measures that 
 
 ### __Correlation Analysis__ 🕵️‍♂️
 
-We wished to analyse the correlation between each of the pollutants before, during and after the COP26 initiative. Below is the code and corresponding correlation table for our São Paulo example:
+We wished to analyse the correlation between each of the pollutants before, during and after the COP26 initiative. Below is the code and corresponding correlation matrix for our São Paulo example:
 
 
 
@@ -599,7 +599,7 @@ We wished to analyse the correlation between each of the pollutants before, duri
 
 We see here that there is a very strong relationship between Carbon Monoxide and NO2 in Sao Paulo, during the pandemic this actually weakened - to 0.73 before slightly increasing to 0.78 - it seems that the COP26 initiative actually changed the correlations between each of the variables.
 
-Below are the correlation graphs for all of our other locations _(HINT: feel free to download the image to view all graphs in HD)_:
+Below are the correlation matrices for all of our other locations _(HINT: feel free to download the image to view all graphs in HD)_:
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/30.jpg" class="center"  />
 
