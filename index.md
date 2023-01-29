@@ -705,11 +705,19 @@ If you are having any trouble with accessing our dynamic web application, __plea
 
 ### __Our Verdict & Answer__ 💪
 
-As discussed, we found different countries responded differently to the conference: We saw the countries demonstrated time lags when it came to their emissions; they generally decreased their emissions suddenly during COP26 then increased them again after COP26; this was most notable for Brazil as noted. 
+Our project had many initial goals, from analysing the efficacy of COP26 to understanding why so many climate initiatives have taken place over time! Upon completing our project, with the help of our __dynamic Streamlit application__, we have made __great strides__ in achieving some of these goals, yet have fallen short in others:
 
-We found clear evidence of time lags when it came to their response and concluded this is why so many climate initiatives have been implemented over the last 30 years. Delhi, in particular, seemed not to fit this trend - they actually increased their emissions during the pandemic. 
+1.	Throughout our project, we found clear evidence of __time lags__ in the aftermath of the COP26 conference. Many countries did, indeed, manage to reduce their emissions during the advent of the conference! Unfortunately, these reductions seemed very short-lived, with most countries returning back to their ‘old’ habits! This was most notable for Sao Paulo; they made terrific strides in greatly reducing their carbon monoxide emissions during the conference and yet, __increased__ their emissions after the conference. We conclude that perhaps this is why so many climate initiatives have been implemented over the last 30 years. It suggests that __systemic changes are needed in the period after a conference__ – perhaps countries should continue to have regular ‘meets,’ ensuring the hard-gotten gains are not forgotten.
 
-__Clearly, different countries respond in different ways contingent on their levels of development.__
+2.	Overall, we concluded that COP26 did, overall, turn out to be a __success__. Even after considering the impacts of time-lags (that reduced its overall efficacy) the conference had a resoundingly positive effect! It not only led to almost uniform reductions in emissions during the conference, but with its 197 signatories shed much needed light on the issue of climate change. COP26 has catalysed several long-term climate initiatives; the impact of which remains to be seen!
+
+3.	We also found clear evidence that different countries responded differently to these initiatives, highly contingent on their level of development. Lesser developed countries, particularly the poor nations within Africa seemed almost unresponsive to the COP26 conference. Having read __Ha Joon Chang’s theory__ (referenced above) we noted that poorer countries seem more inelastic than rich countries in terms of curtailing pollution. We found that the poorer nations were less able to curtail pollution and, in the rare cases where gains were made, these were almost entirely forgone after the conference ended!
+
+4.	However, we are able to unable to discern what this initiative had the largest impact on. It was very difficult to uncover the impact areas of the conference several reasons – firstly, the effects of the conference were far from uniform. Each country seemed to be better at reducing some emissions than others (Sao Paulo reduced their carbon monoxide emissions by 96.5% during the conference but increased their ammonia emissions by 32%. Secondly, we had several cases we couldn’t explain. Take India for example - it actually increased PM2.5 emissions by 27% during the conference but then reduced it back to pre-COP26 levels. __There are clear outliers!__
+
+### __What could be next?__ 🤔
+
+Our dynamic Streamlit application provides data on all the nations; even those that are not COP26 signatories. In future projects we want to see if positive externalities existed in relation to the conference __– did the process of the whole world shining a light on COP26 actually reduce emissions in non-signatory countries?__
 
 ---
 
