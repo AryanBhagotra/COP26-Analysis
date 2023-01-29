@@ -478,7 +478,7 @@ The dates for our approx. 17,500 rows for this location over the total time we a
 
 ### __Statistical Inference On Our Most Relevant Variables__ 📐
 
-As two economists at heart, we used a powerful tool that is usually applied in the field of __econometrics__ to get a further understanding of the _range_ and _distribution_ of the most relevant variables: [Stata](https://www.stata.com/)
+As two economists at heart, we used a powerful tool that is usually applied in the field of __econometrics__ to get a further understanding of the _range_ and _distribution_ of the most relevant variables: [Stata](https://www.stata.com/).
 
 Applying the software to the pivoted, melted and mutated data for São Paulo, we got the following _'summarize'_ table, providing some really interesting information on its __range and distribution__ _(provided by standard deviation)_.
 
