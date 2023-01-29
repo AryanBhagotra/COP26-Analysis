@@ -36,7 +36,7 @@ Our global heatmap is available for you to try : [Try Our Heatmap](https://amand
 
 ### __Where could we go next?__
 
-We hope to conduct a similar analysis on COP27 and subsequent climate conferences – let’s see if they have a more pronounced effect on the emission levels! In future projects we would also love to see if positive externalities exist in relation to the COP26 conference (and others like it) – did the process of the whole world shining a light on COP26 actually reduce emissions in non-signatory countries by making them think more consciously? :thinking:
+We hope to conduct a similar analysis on COP27 and subsequent climate conferences – let’s see if they have a more pronounced effect on the emission levels! In future projects we would also love to see if positive externalities exist in relation to the COP26 conference (and others like it) – __did the process of the whole world shining a light on COP26 actually reduce emissions in non-signatory countries by making them think more consciously?__ :thinking:
 
 
 
