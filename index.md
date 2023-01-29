@@ -471,11 +471,35 @@ As the outcome of this cleaning, which required a process of __pivoting, melting
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/23.jpg" class="center"  />
 
 
-The dates for our 17,500 rows for this location over the total time we are able to access are very clear, as are the pollutants we have a particular interest in which find their associated values going down on the left hand side.
+The dates for our approx. 17,500 rows for this location over the total time we are able to access are very clear, as are the pollutants we have a particular interest in which find their associated values going down on the left hand side.
 
 
 ---
 
+### __Statistical Inference On Our Most Relevant Variables__ 📐
+
+As two economists at heart, we used a powerful tool that is usually applied in the field of __econometrics__ to get a further understanding of the _range_ and _distribution_ of the most relevant variables: [Stata](https://www.stata.com/)
+
+Applying the software to the pivoted, melted and mutated data for São Paulo, we got the following _'summarize'_ table, providing some really interesting information on its __range and distribution__ _(provided by standard deviation)_.
+
+| Variable | Obs | Mean | Std. Dev | Min | Max | Range |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| v1 | 17,543 | 8771 | 5064.372 | 0 | 17542 | 17542 |
+| co | 17,543 | 1077.666 | 956.6079 | 253 | 9506 | 9253 |
+| no | 17,543 | 21.61865 | 45.01775 | 0 | 472 | 472 |
+| no2 | 17,543 | 49.02246 | 35.39005 | 3 | 416 | 413 |
+| o3 | 17,543 | 40.70564 | 72.19143 | 0 | 686 | 686 |
+| so2 | 17,543 | 32.41823 | 19.58992 | 2 | 225 | 223 |
+| pm2.5 | 17,543 | 49.24232 | 63.39532 | 0 | 985 | 985 |
+| pm10 | 17,543  | 77.15676 | 80.66925 | 4 | 1170 | 1166 |
+| nh3 | 17,543 | 13.61301 | 8.613516 | 1 | 91 | 90 |
+
+From our summary statistics we can __clearly discern certain facts and figures.__ The range in Carbon Monoxide emissions is the highest compared to all other pollutants (9253 versus just 1166 for particulate matter 10.) The mean of carbon monoxide is also far greater than the other pollutants (13x greater than the second highest) – __clearly Carbon Monoxide is a particularly common pollutant, with a great degree of volatility.__
+
+We also understand this table is __slightly misleading__ – from the table alone, it seems that Nitrous Oxide is not a particularly pressing threat (it has relatively low mean and range). However, as we will discuss later, __Nitrous Oxide is a staggering 300x more potent that Carbon Monoxide.__ As such, __arbitrary comparisons at this point are not fruitful.__
+
+
+---
 
 
 ### __Initial Heatmap Exploration__ 🚀
@@ -681,7 +705,7 @@ First, we plotted the __world heatmap__, where we have shown the quality of air 
 
 Apart from the map we have added __2 more plots__:
 
-- In the plot below we have given the user freedom to select any of feature available and any country in the dataset _(like NO2 information)_, and plot their values for __3 timelines across 3 graphs__:
+- In the plot below we have given the user freedom to select any of feature available and any country in the dataset _(like SO2 information)_, and plot their values for __3 timelines across 3 graphs__:
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/32.jpg" class="center"  />
 
