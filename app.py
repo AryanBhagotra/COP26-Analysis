@@ -9,7 +9,10 @@ st.set_page_config(layout="wide")
 
 @st.cache
 def get_data():
-    post_df = pd.read_csv('data/post.csv')
+    # post_df = pd.read_csv('data/post.csv')
+    post1_df = pd.read_csv('data/post1.csv')
+    post2_df = pd.read_csv('data/post2.csv')
+    post_df = pd.concat([post1_df, post2_df])
     during_df = pd.read_csv('data/during.csv')
     pre1_df = pd.read_csv('data/pre1.csv')
     pre2_df = pd.read_csv('data/pre2.csv')
