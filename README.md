@@ -26,17 +26,20 @@ Our global heatmap is available for you to try : [Try Our Heatmap](https://amand
  
 ### __Working collaboratively!__
 
-Working well as a team was exactly what made us successfully produce such a _large scale_ project as such a _small group._ We utilised our varying specilaities in order to delegate work in a way that ensured __efficiency__ and __proactivity__.
+Working well as a team was exactly what made us successfully produce such a _large scale_ project as such a _small group._ We utilised our varying specialities in order to delegate work in a way that ensured __efficiency__ and __proactivity__.
 
-Amandeep had long taken a liking towards the code. Debugging, visualisation and coding were his strong points. 
+Amandeep had long taken a liking towards the code. Debugging, visualisation and coding were his strong points. Amandeep worked with the code mainly!
 
-Aryan had a strong fortitude for connecting these technical facets to the question at hand. He was able to analyse and scritinise findings delivered by the data and discern 'patterns amongst the madness'.
+Aryan had a strong fortitude for connecting these technical facets to the question at hand. He was able to analyse and scrutinise findings delivered by the data and discern 'patterns amongst the madness'.
 
 Overall our skills tesselated beautifully, and we were able to produce our best work through our shared conscientious mindset! 👍
 
 ### __What’s next?__
 
 We hope to conduct a similar analysis on COP27 and subsequent climate conferences – let’s see if they have a more pronounced effect on the emission levels! :thinking:
+
+
+
 
 
 
