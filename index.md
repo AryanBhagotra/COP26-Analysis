@@ -478,9 +478,39 @@ The dates for our approx. 17,500 rows for this location over the total time we a
 
 ### __Statistical Inference On Our Most Relevant Variables__ 📐
 
-As two economists at heart, we used a powerful tool that is usually applied in the field of __econometrics__ to get a further understanding of the _range_ and _distribution_ of the most relevant variables: [Stata](https://www.stata.com/).
+As two economists at heart, we know that Python is a powerful tool that is often applied in the field of __econometrics__. We used the __Pandas library__ to get a further understanding of the _range_ and _distribution_ of the most relevant variables.
 
-Applying the software to the pivoted, melted and mutated data for São Paulo, we got the following _'summarize'_ table, providing some really interesting information on its __range and distribution__ _(provided by standard deviation)_.
+We ran the following code on the pivoted, melted and mutated data for São Paulo:
+
+```
+import pandas as pd
+df = pd.read_csv('sao_paulo.csv')
+
+d = {
+    0: 'co',
+    1: 'no',
+    2: 'no2',
+    3: 'o3',
+    4: 'so2',
+    5: 'pm2_5',
+    6: 'pm10',
+    7: 'nh3'
+}
+dfDon = pd.DataFrame(columns=['Variable', 'Obs', 'Mean', 'Std. Dev.', 'Min', 'Max', 'Range' ])
+dfDon['Variable'] = ['co', 'no', 'no2', 'o3', 'so2', 'pm2_5', 'pm10', 'nh3']
+print(dfDon)
+for i in range(8):
+    dfDon['Obs'][i] = df[d[i]].count()
+    dfDon['Mean'][i] = df[d[i]].mean()
+    dfDon['Std. Dev.'][i] = df[d[i]].std()
+    dfDon['Min'][i] = df[d[i]].min()
+    dfDon['Max'][i] = df[d[i]].max()
+    dfDon['Range'][i] = df[d[i]].max() - df[d[i]].min()
+
+print(dfDon)
+```
+
+We got the following _'summary'_ table, providing some really interesting information on its __range and distribution__ _(provided by standard deviation)_.
 
 | Variable | Obs | Mean | Std. Dev | Min | Max | Range |
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
