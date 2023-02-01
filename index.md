@@ -26,7 +26,7 @@ We know that climate change has very serious implications for both the future an
 
 
 
-We wanted to look at several conferences and understand how they differ in their efficacy, but unfortunately with our API restrictions, we decided to focus solely on COP26. 
+We initially wanted to look at several conferences and understand how they differ in their efficacy, but unfortunately with our API restrictions (that we will built upon later), we decided to focus solely on COP26. 
 
 To help us answer this question, we initially began by dividing cities into three global clusters 🌎:
 
@@ -34,7 +34,7 @@ To help us answer this question, we initially began by dividing cities into thre
 2.	__A cluster with emerging cities__ _(Delhi and São Paulo)_
 3.	__A cluster with lower income cities__ _(Gaborone and Port-Au-Prince)_
 
-We wanted to investigate how COP26 affected the emissions of four key pollutants 💨:
+We initially wanted to investigate how COP26 affected the emissions of four key pollutants (but eventually greatly expanded this as you will see!0 💨:
 
 1.	__Carbon Monoxide__: carbon monoxide occurs primarily from the emissions of fossil-fuel powered engines.
 2.	__Oxygen Trioxide__: when inhaled, this pollutant can cause severe damage to the lungs.
@@ -55,7 +55,7 @@ We investigated a number of trends - whether certain pollutants were more suscep
 2.	The data __during__ the COP26 conference had __173,000 data points__
 3.	The data __after__ the COP26 conference had __221,000 data points__
 
-If time lags do exist, it can explain why so many conferences have taken place. However, it also suggests that systemic change needs to be made with respect to how the issue of climate change is being dealt with. If the level of development of a country does, indeed, affect the extent to which pollution can be curtailed, it provides evidence for Ha-Joon Chang’s argument that the richer nations are ’Kicking Away The Ladder,’ for the less developed countries. 🪜
+If time lags do exist, it can explain why so many conferences have taken place. However, it also suggests that systemic change needs to be made with respect to how the issue of climate change is being dealt with. If the level of development of a country does, indeed, affect the extent to which pollution can be curtailed, it provides evidence for Ha-Joon Chang’s argument that the richer nations are ’Kicking Away The Ladder,’ for the less developed countries. This theory argues that, richer countries (that have the financial resources) impose on poorer nations strict restrictions. However, these 'now rich' nations did not hold themselves to the same restrictions when they themselves were developing! 🪜
 
 Throughout this page, you'll come across the Data Science Odyssey that we had embarked on. You'll see our __story and 'big picture' of how we gathered our data__ and the __challenges we faced__ along the way.
 
@@ -69,8 +69,8 @@ Throughout this page, you'll come across the Data Science Odyssey that we had em
 
 <img src="https://github.com/AmandeepN/COP26-Analysis/raw/main/images/1.jpg" class="center"  />
 
-As mentioned, in order to truly grasp the patterns and, potentially, causal relationships within our data; we realised at the end of our journey that in order to truly tell the tale of the efficacy of COP26 across different demographies, we needed to convey our data across much larger geographical regions - __so we went with the whole world.__ 😁
-
+As mentioned, in order to truly grasp the patterns and, potentially, causal relationships within our data; we realised at the end of our week 8 and week 11 journey that in order to truly tell the tale of the efficacy of COP26 across different demographies, we needed to convey our data across much larger geographical regions - __so we went with the whole world.__ 😁
+ 
 However, this required us to go beyond the remit of the project as this markdown site (as required by the project) is purely static and simply doesn't allow for any dyanmic usage. Given that we wanted our data visualisation to be interactive, we had to resort to other methods of utilising our comprehensive GitHub repository and connecting this with an app framework (that preferably supported Python lanaguage and libraries) in order to establish this interactivity.
 
 Streamlit was a fantastic app framework that enabled this, and allowed us to connect our repo and API to an interface that includes phenomenal tools of data visualisation, including a world heatmap, linegraphs and stacked barcharts for our 3 chosen periods (before, during and after COP26) for __every country__ and __every pollutant__ provided by our API.
@@ -90,7 +90,7 @@ We will reveal more on our journey in creating this app further down on this pag
 
 
 
-As briefly aforementioned, our motivation for this project stemmed from our passion for the environment. We have seen, with our own eyes, how pervasive the issue of climate change is. We initially wanted to investigate multiple conferences (we identified the Kyoto Protocol as one of particular interest), but the API would not go that far back, and instead settled on COP26 (we could get data on emissions before, during and after the protocol). Data science has been a phenomenal tool in helping climate scientists critically understand the ambiguities and uncertainties inherent in climate data – we wanted to emanate this in our own project!
+As briefly aforementioned, our motivation for this project stemmed from our passion for the environment. We have seen, with our own eyes, how pervasive the issue of climate change is. We initially wanted to investigate multiple conferences (we identified the Kyoto Protocol as one of particular interest), but the API would not go that far back, and instead had to settle on COP26 (we could get data on emissions before, during and after the protocol). Data science has been a phenomenal tool in helping climate scientists critically understand the ambiguities and uncertainties inherent in climate data – we wanted to emanate this in our own project!
 
 Through investigating the different factors that affected climate change, we wanted to identify any trends or patterns that could explain the last 50 years of inefficiency. As climate concerns continue to remain very pertinent, we were really interested in exploring this topic to see if there were any factors affecting pollution that we hadn’t previously considered. We are both Economists at heart, noting that pollution was a negative externality. By its very nature, pollution is something that affects all of us and it is very important that we critically analyse the policies that aim to reduce it! We wanted to go one step above and examine how the degree of response to climate change varies based on the level of economic development of the nation. Data science presents us with the opportunity to examine the uncertainty of climate models, visualising the issue at hand.
 
@@ -157,7 +157,7 @@ The choice of our 6 cities was entirely orientated around the fact that we wante
 
 2. __Economic priorities:__ Developing countries may prioritise economic growth over environmental protection, as they may see environmental regulations as a hindrance to economic development. On the other hand, developed countries may have a stronger emphasis on environmental protection as their economy has already been established.
 
-3. __Political will:__ Wealthy countries may have a stronger political will to address environmental issues, as they have the resources and stability to implement policies and regulations to protect the environment. Developing countries may have less political will to address environmental issues due to lack of resources and other pressing concerns.
+3. __Political will:__ Wealthy countries may have a stronger political will to address environmental issues, as they have the resources and stability to implement policies and regulations to protect the environment. Developing countries may have less political will to address environmental issues due to lack of resources and other pressing concerns. In fact, this is the backbone of Chang's 'Kicking Away The Ladder' argument.
 
 4. __Public awareness:__ Developed countries generally have higher levels of education and more access to information, which can lead to greater public awareness and concern about environmental issues. This can lead to greater pressure on governments and businesses to take action to protect the environment.
 
@@ -215,7 +215,7 @@ Based on our options above, the following provided our general consensus:
 
 
 
-- OpenWeather’s main alternative that we were looking at: the __WHO GHO OData API__ _(image above)_. This proved to be a weaker option as the Air Pollution API by OpenWeather had a much more comprehensive repository of historical data than the WHO’s OData API. Although the WHO’s OData API covered a far larger number of years stemming from 2010-2019, it had actually taken an annual mean of each year of that data. Meaning that this API only provided 9 rows of historical data. We were initially attracted to this as we thought it would be a good idea to perhaps look at a range of climate protocols: the kyoto protocol of 1997, the Paris Agreement of 2016; but ultimately we realised given the severe lack of data, this wouldn’t be feasible. We ended up focusing on COP26 of 2021 and made the most of the OpenWeather Historical API to make use of the very comprehensive data it provided from over the past 2 years. Secondly and more briefly, the WHO’s OData API only provided data on PM2.5, a type of particulate; we wanted to discuss a wider range of pollutant gases that, come statistical inference, would allow us to answer our question with greater conviction.
+- OpenWeather’s main alternative that we were looking at: the __WHO GHO OData API__ _(image above)_. This proved to be a weaker option as the Air Pollution API by OpenWeather had a much more comprehensive repository of historical data than the WHO’s OData API. Although the WHO’s OData API covered a far larger number of years stemming from 2010-2019, it had actually taken an annual mean of each year of that data. Meaning that this API only provided 9 rows of historical data. We were initially attracted to this as we thought it would be a good idea to perhaps look at a range of climate protocols: the Kyoto protocol of 1997 and the Paris Agreement of 2016 were two protocols of particular interes; but ultimately we realised given the severe lack of data, this wouldn’t be feasible. We ended up focusing on COP26 of 2021 and made the most of the OpenWeather Historical API to make use of the very comprehensive data it provided from over the past 2 years. Secondly and more briefly, the WHO’s OData API only provided data on PM2.5, a type of particulate; we wanted to discuss a wider range of pollutant gases that, come statistical inference, would allow us to answer our question with greater conviction.
 
 - __3 - 7__ covers a few other sources as well that contain many relevant datasets for use. However, whether due to __lack of scale__, or indeed __lack of applicability__ to the variables we were looking to analyse, we decided that the OpenWeather Air Pollution API proved to be the best dataset to answer our question and to truly examine the scale and efficacy of COP26, and be able to employ that geographical perspective as well.
 
@@ -260,10 +260,8 @@ Our API returned data on our __four variables of interest.__ As this covered all
 
 To make our code usable, we initially had to import in all of the libraries (requests, pandas, numpy, json and matplotlib.), these gave us the critical tools we needed to ensure that we were able to access all the tools needed in order to execute all required functions to our data.
 
-We started by analysing OpenWeather’s Air Pollution API, seeing the total 9 variables and began to decipher which ones could be used to universally answer our question. For some obscure air pollutants like PM10, we had empty values for most countries so we had to withdraw the prospect of any use of these.
-
-Eventually we settled on using the pollutants Nitrous Oxide, Carbon Monoxide, Ozone as well as PM2.5 particulates as our variables of interest. 
-
+We started by analysing OpenWeather’s Air Pollution API, seeing the total 9 variables and began to decipher which ones could be used to universally answer our question. For some obscure air pollutants like CH4, we had empty values for most countries so we had to withdraw the prospect of any use of these.
+ 
 We created this flowchart that can be seen below, to illustrate the _scale, size and hierarchies_ involved with the information that we wanted to illustrate in our visual analysis:
 
 
@@ -276,9 +274,9 @@ Within our time frame _(approx. past 2 years)_, we found that each country had a
 
 When we break this down into our clusters of 2 countries each, separated by their level of economic development; low income countries, newly emerging economies and high income countries found themselves with paginated data that was approximately equal in size at around __315,000 data points.__
 
-And then when splitting our 2 year time frame into 3 distinct and equal length periods of beforeCOP26, during-COP26 and after-COP26 we found ourselves with data points across our 4 chosen pollution metrics at about 105,000. Which surprisingly, at least compared to other groups, was a lot more manageable than it had initially seemed.
+And then when splitting our 2 year time frame into 3 distinct and periods of before, during and after COP26, we found ourselves with data points across our 4 chosen pollution metrics at about 105,000. Which surprisingly, at least compared to other groups, was a lot more manageable than it had initially seemed.
 
-We utilised the drop function to allow us to drop unnecessary columns. This allowed us to drop the columns of the variables that we were not actually interested in (SO2, CH4). Using the concat function, we merged the 6 dataframes into one, main, dataframe. This made subsequent data operations a bit easier. We also utilised the .loc function to filter out the timerange that we needed (pre, during and post COP26).
+We utilised the drop function to allow us to drop unnecessary columns. This allowed us to drop the columns of the variables that we were not actually interested in (CH4). Using the concat function, we merged the 6 dataframes into one, main, dataframe. This made subsequent data operations a bit easier. We also utilised the .loc function to filter out the timerange that we needed (pre, during and post COP26).
 
 
 ---
@@ -326,9 +324,9 @@ The diagram above _illustrates_ this process.
 ### __Preliminary Visualisation (Time Series)__ 📈
 
 
-Briefly explaining some of the code we employed in the experimentation we started off with; MatPlotLib provided the basis of our preliminary experimentation. This is something that we have already dealt with through Problem Aets and on the few Python courses we have done ourselves; and had developed a marked expertise in!
+Briefly explaining some of the code we employed in the experimentation we started off with; MatPlotLib provided the basis of our preliminary experimentation. This is something that we have already dealt with through Problem Sets and on the few Python courses we have done ourselves!
 
-But, in essence __we started off by plotting graphs of the same pollutant _(on this page you can see PM2.5)_ for our 6 different cities and timeframes; that being before, during and after COP26.
+But, in essence __we started off by plotting graphs of the same pollutant__ (on this page you can see PM2.5)_ for our 6 different cities and timeframes; that being before, during and after COP26.
 
 By plotting the designated start and end times for these periods on the x-axis and the pollutant levels on the y-axis, we were able to access quite a comprehensive graph illustrating air pollution levels over the course of a period for all cities and potentially a bit of a story associated with this data:
 
@@ -673,14 +671,14 @@ __London__ _(Developed Economy)_:
 
 We have used the __Seaborn Python Data Visualisation Library__, based on MatPlotLib, to develop correlation data as summary statistics. 
 
-The role of this is to shed light on our limitation last week concerning causation vs correlation. Investigating correlations between all gases before, during and after COP26 across all of our locations will allow us to explore whether or not the initiative has affected the interrelations between a country’s pollutants. Pre-COP26, we noticed that Ozone emissions were strongly correlated with the carbon monoxide emissions in Gaborone (a correlation of 0.36 existed between the two), which actually fell to 0.11 during the conference. It did, however, slightly increase to 0.4 after the conference; perhaps once again indicating the time lag.
+The role of this is to shed light on our limitation last week concerning causation vs correlation. Investigating correlations between all gases before, during and after COP26 across all of our locations will allow us to explore whether or not the initiative has affected the interrelations between a country’s pollutants. Pre-COP26, we noticed that Ozone emissions were strongly correlated with the carbon monoxide emissions in Gaborone (a correlation of 0.36 existed between the two, which actually fell to 0.11 during the conference). It did, however, slightly increase to 0.4 after the conference; perhaps once again indicating the time lag.
 
 
 ---
 
 ## Our End Outcome
 
-We quite accurately and precisely were able to deliver convincing findings, visualisations and inference on our 4 pollution metrics across our 6 global locations. It is clear that our findings are conducive to delivering potential answers to our overall question, but we felt as if providing an answer to our question through merely 6 countries and a restritive set of 4 pollution metrics was not doing due justice to the very global and cosmopolitant essence of the COP26 climate initiative and its impact. 
+We initially quite accurately and precisely were able to deliver convincing findings, visualisations and inference on our 4 pollution metrics across our 6 global locations (before expanding this to the whole world!) It is clear that our findings are conducive to delivering potential answers to our overall question, but we felt as if providing an answer to our question through merely 6 countries and a restritive set of 4 pollution metrics was not doing due justice to the very global and cosmopolitant essence of the COP26 climate initiative and its impact. 
 
 We were determined to find a way to replicate the scale of COP26 in our findings, analysis and - _eventually_ - conclusion. After much thought, we knew that global data visualisation could never be established through static means and we needed a dynamic, interactive interface in order to do so.
 
