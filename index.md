@@ -55,7 +55,7 @@ We investigated a number of trends - whether certain pollutants were more suscep
 2.	The data __during__ the COP26 conference had __173,000 data points__
 3.	The data __after__ the COP26 conference had __221,000 data points__
 
-If time lags do exist, it can explain why so many conferences have taken place. However, it also suggests that systemic change needs to be made with respect to how the issue of climate change is being dealt with. If the level of development of a country does, indeed, affect the extent to which pollution can be curtailed, it provides evidence for Ha-Joon Chang’s argument that the richer nations are ’Kicking Away The Ladder,’ for the less developed countries. This theory argues that, richer countries (that have the financial resources) impose on poorer nations strict restrictions. However, these 'now rich' nations did not hold themselves to the same restrictions when they themselves were developing! 🪜
+If time lags do exist, it can explain why so many conferences have taken place. However, it also suggests that systemic change needs to be made with respect to how the issue of climate change is being dealt with. If the level of development of a country does, indeed, affect the extent to which pollution can be curtailed, it provides evidence for Ha-Joon Chang’s argument that the richer nations are ’Kicking Away The Ladder,’ for the less developed countries. This theory argues that richer countries (that have the financial resources) impose on poorer nations strict restrictions with respect to pollution. However, these 'now rich' nations did not hold themselves to the same restrictions when they themselves were developing! 🪜
 
 Throughout this page, you'll come across the Data Science Odyssey that we had embarked on. You'll see our __story and 'big picture' of how we gathered our data__ and the __challenges we faced__ along the way.
 
@@ -326,7 +326,7 @@ The diagram above _illustrates_ this process.
 
 Briefly explaining some of the code we employed in the experimentation we started off with; MatPlotLib provided the basis of our preliminary experimentation. This is something that we have already dealt with through Problem Sets and on the few Python courses we have done ourselves!
 
-But, in essence __we started off by plotting graphs of the same pollutant__ (on this page you can see PM2.5)_ for our 6 different cities and timeframes; that being before, during and after COP26.
+But, in essence __we started off by plotting graphs of the same pollutant__ (on this page you can see PM2.5) for our 6 different cities and timeframes; that being before, during and after COP26.
 
 By plotting the designated start and end times for these periods on the x-axis and the pollutant levels on the y-axis, we were able to access quite a comprehensive graph illustrating air pollution levels over the course of a period for all cities and potentially a bit of a story associated with this data:
 
