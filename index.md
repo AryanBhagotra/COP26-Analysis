@@ -526,6 +526,15 @@ From our summary statistics we can __clearly discern certain facts and figures._
 
 We also understand this table is __slightly misleading__ – from the table alone, it seems that Nitrous Oxide is not a particularly pressing threat (it has relatively low mean and range). However, as we will discuss later, __Nitrous Oxide is a staggering 300x more potent that Carbon Monoxide.__ As such, __arbitrary comparisons at this point are not fruitful.__
 
+It is important that we are also able to now address two questions:
+
+1. __What does your data look like in general?__
+
+As presented through our __pivoted, melted & mutated data__, alongside our __summary statistics__; we can see that our data looks exactly as we would expect. For a range of dates from the beginning of our 'Pre-COP26' period, up until the present day, we see consistent float values for all pollutants. This is, however, in spite of the existence of missing values (which we actively address as previously stated). We see a total of 17,543 observations across our variables (pollutants) which makes perfect sense too!
+
+2. __Do the data types of our variables make sense?__
+
+__The data types we have retrieved make perfect sense!__ We have _integers_ for the value associated with the number of observations we have. This is alongside integer values for our Min and Max values which (as integers themselves) also provide integer results for our range. Furthermore, we have _float_ values for the mean and standard deviation of our data, which is exactly as expected.
 
 ---
 
