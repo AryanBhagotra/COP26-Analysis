@@ -22,7 +22,7 @@ Our DS105M project is centred around COP26 and the impacts that it had. In parti
 
 ### __Why?__
 
-Each and every year, news of a different climate change conference dominates the headlines :seedling:. It seemed that each conference failed to bring about the change it required. We wondered if these conferences had any impacts on pollution, and whether the impacts were uniform. In fact, our very own __Minouche Shafik__ presented at COP27! As ESG considerations dominate the financial sector, marking a shift from a __shareholder__ to a __stakeholder__ model, we wanted to assess if governments were responding to global climate concerns! :evergreen_tree:
+Each and every year, news of a different climate change conference dominates the headlines :seedling:. It seemed that each conference failed to bring about the change it required. We wondered if these conferences had any impacts on pollution, and whether the impacts were uniform. In fact,__Minouche Shafik__ presented at COP27! As ESG considerations dominate the financial sector, marking a shift from a __shareholder__ to a __stakeholder__ model, we wanted to assess if governments were responding to global climate concerns! :evergreen_tree:
 
 ### __What did we find?__
 
